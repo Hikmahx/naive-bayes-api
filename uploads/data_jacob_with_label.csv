@@ -1,0 +1,3322 @@
+Issue Title,Issue Body,Feature Request
+"Module '""@egoist/tipc/renderer""' has no exported member 'createHandlers'.","it seems tipc does not support ""Calling renderer from main"" on the latest release
+
+or I missed something? 
+
+https://github.com/egoist/tipc/tree/main?tab=readme-ov-file#calling-renderer-from-main",False
+Issue Template Not works well,"When I try to create a new issue for Chaos Mesh, the ""bug report"" option is not available in issue template:
+
+![image](https://github.com/user-attachments/assets/d07d2d76-ec6f-4fb6-b42c-f496f6083cbd)
+
+
+![image](https://github.com/user-attachments/assets/242028ef-8a37-453f-8036-e8e22707da63)
+
+",False
+blur,"### Tag
+
+Collectible
+
+### Project URL
+
+https://blur.io/
+
+### Worker description
+
+Blur: NFT Marketplace
+
+### What actions should be included?
+
+- ExchangeOrdersMatched
+- LoanOfferTaken
+- Repay
+- StartAuction
+- Refinance
+- Seize
+- BuyLocked
+
+
+### Additional description
+
+_No response_
+
+### This is not a duplicated worker request
+
+- [X] I have searched [existing issues](https://github.com/rss3-network/node/issues) and [pull requests](https://github.com/rss3-network/node/pulls) to ensure this worker has not already been requested",True
+Node Automated Deployer should generate a random secret key if not provided,"This issue related to https://github.com/RSS3-Network/Node/issues/345
+
+By default, the secret key would be used to configure the auth part at the core component of the Node, and it should be configured somewhere in the config file (config.yaml)
+
+If user does not provide the secret key, this deployer should generate a random one automatically.
+
+",True
+typo: redis expose port should be 6379,https://github.com/RSS3-Network/Node-Automated-Deployer/blob/e8f4c29b8964316824964a4e31f6f322c589c9e5/pkg/compose/compose.go#L37,False
+do not use sudo in automated_deploy.sh,"we asked too many privileges by sudo, but we only use it for installing curl. 
+
+it's better to ask user to install curl in advance.",True
+the notification badge always exists even there is no notification,"follow 0.0.1-alpha.1  on macOS 14.5
+
+![image](https://github.com/RSSNext/follow/assets/20221408/9f5627a5-6561-47b1-b180-6029f1b35bf0)
+",False
+nox portforwarding port 9993 is conflicted with zerotier-one,"Hi team!
+
+I am trying to build my first application on my local environment.
+
+the `nox` cluster failed to start on my machine because the `nox-2` node would like to forwarding on `9993`, which is a kind of well-known port already taken by zerotier-one, which is the local agent of zerotier network.
+
+
+https://github.com/fluencelabs/cli/blob/7605eae0960a2b446433b205035cd124f43168e9/src/lib/const.ts#L136
+
+reference: https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
+",False
+"failed on following the ""Getting Started"" docs because `wasm32-wasi` is not installed automatically.","Hi team!
+
+I am exploring the fluence and trying to build my first application on it.
+
+I followed this doc: https://fluence.dev/docs/build/overview/getting_started
+
+I get lots of build errors because I already get rust setup up on my machine  but `wasm32-wasi` support is not installed by default.
+
+I saw some codes to setup rust but I think maybe my situation is not covered.
+
+https://github.com/fluencelabs/cli/blob/7605eae0960a2b446433b205035cd124f43168e9/src/lib/rust.ts#L102-L120
+
+",False
+Release 2.7.0 TODOs,"pending issues / prs
+
+- [ ] #4334
+- [ ] #4336
+- [ ] enable stacktrace for rust ponents
+
+",False
+"[Bug]: screen.getCursorScreenPoint() not works on linux, KDE","### Preflight Checklist
+
+- [X] I have read the [Contributing Guidelines](https://github.com/electron/electron/blob/main/CONTRIBUTING.md) for this project.
+- [X] I agree to follow the [Code of Conduct](https://github.com/electron/electron/blob/main/CODE_OF_CONDUCT.md) that this project adheres to.
+- [X] I have searched the [issue tracker](https://www.github.com/electron/electron/issues) for a bug report that matches the one I want to file, without success.
+
+### Electron Version
+
+29.1.0
+
+### What operating system are you using?
+
+Other Linux
+
+### Operating System Version
+
+archlinux
+
+### What arch are you using?
+
+x64
+
+### Last Known Working Electron version
+
+28.2.5
+
+### Expected Behavior
+
+everytime I call `screen.getCursorScreenPoint()`, it could return the position of mouse 
+
+
+### Actual Behavior
+
+only the very first time I call `screen.getCursorScreenPoint()`, it would return the right position. on the next calls, it would always return the same value as the first call returned, regardless how I move the mouse
+
+
+### Testcase Gist URL
+
+_No response_
+
+### Additional Information
+
+_No response_",False
+[bug] can not logout after token expired,"### Describe the bug
+
+```
+$ zeabur auth logout             
+INFO    Token is from OAuth2 and it's expired, refreshing it
+ERROR   failed to refresh token, it is recommended to logout and login again: failed to refresh token: oauth2: ""invalid_grant"" ""The provided authorization grant (e.g., authorization code, resource owner credentials) or refresh token is invalid, expired, revoked, does not match the redirection URI used in the authorization request, or was issued to another client""
+```
+
+### Expected behaviour
+
+could logout and clear my session.
+
+### Additional context
+
+_No response_
+
+### Code of Conduct
+
+- [X] I agree to follow this project's Code of Conduct",False
+keep stack backtrace for our tools like toda and chaos-tproxy which written in rust,"## Feature Request
+
+**Is your feature request related to a problem? Please describe:**
+<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+Yes. Stack backtrace is not available when the program get crashed, it's not easy to debug.
+
+ref: log file in https://github.com/chaos-mesh/chaos-mesh/issues/4330
+
+**Describe the feature you'd like:**
+<!-- A clear and concise description of what you want to happen. -->
+Keep the backtrace when error occurs.
+
+
+**Describe alternatives you've considered:**
+<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+
+**Teachability, Documentation, Adoption, Migration Strategy:**
+<!-- If you can, explain some scenarios how users might use this, situations it would be helpful in. Any API designs, mockups, or diagrams are also helpful. -->
+",True
+Integrate helm-values-schema-json for updating helm values schema in Makefile," as we already generated helm value schema in #4205 and #4306, it's better to integrate this tool in makefile, also in `make check`",True
+Adoption integration test at VM level,"Currently, we mostly use container level test cases for most integration tests like network, CPU, etc.
+
+But for more and more situations requires kernel level testing which is hard to build on github acitons.
+
+I noticed a powerful tool: https://github.com/cilium/little-vm-helper, which could be used as both local command and github action, could create VMs for better isolation.
+",True
+container image on ARM Platform,"**Describe the feature:**
+
+Hi! Recently I have been investigating running milvus on arm machine.
+
+It works well so far, but I have trouble with setting up attu.
+
+attu does not provide an official arm docker container image.
+
+I am very glad to make contribution to update the existing github action workflow to build arm container image with userspace qemu.
+
+
+**Describe a specific use case for the feature:**
+
+using milvus on arm machine 
+",True
+App icon is not delivered with AppImage on Linux​,"### What happened?
+
+I downloaded the 0.8 beta version from the official website, and I got an AppImage application.
+
+And I noticed the application has NO icon entry in both 
+
+- the .desktop file
+- the application Window
+
+<img width=""506"" alt=""image"" src=""https://github.com/toeverything/AFFiNE/assets/20221408/23fe9168-d45c-4d30-b0c2-95180a0d2388"">
+
+<img width=""900"" alt=""image"" src=""https://github.com/toeverything/AFFiNE/assets/20221408/ca2381d1-2227-41b5-9f23-822b159db7a2"">
+
+
+<img width=""314"" alt=""image"" src=""https://github.com/toeverything/AFFiNE/assets/20221408/85f1b92f-38fa-4113-89f0-383474b37be9"">
+
+
+### Distribution version
+
+Linux
+
+### What browsers are you seeing the problem on if you're using web version?
+
+_No response_
+
+### Relevant log output
+
+_No response_
+
+### Anything else?
+
+I would like to submit a PR, but I am not so familiar with electron application.
+
+If you could give me a direction or potential solution, I am very glad to work on it!
+
+Thanks!
+
+### Are you willing to submit a PR?
+
+- [X] Yes I'd like to help by submitting a PR!",False
+Feature Request: add hOCR output support,"Hi! rusty-tesseract is amzaing work! It works pretty well on my both Linux and MacOS machine!
+
+
+I have used it on my personal project https://github.com/strrl/dejavu, and I found that I require more detailed information like 
+page, paragraph, line, not only the ""word"". ref: https://github.com/STRRL/dejavu/issues/7
+
+I found that both `alto` and `hOCR` output could make it possible, and both of them are XML-based output. And I prefer to hOCR because it seems it still keeps updating, https://github.com/kba/hocr-spec/
+
+So here is my proposal:
+
+- append new function called `image_to_hocr`, and output is the **string** which the content is the xml-based hOCR
+
+
+How do you think about it? :heart:
+
+I could draft a PR for that.
+
+",True
+Not works with Nextjs: Module not found: Default condition should be last one,"Hi! I am using grammy with nextjs, everything works well until I introduce the conversation plugin.
+
+```text
+- error ./node_modules/.pnpm/@grammyjs+conversations@1.1.2_grammy@1.17.2/node_modules/@grammyjs/conversations/out/deps.node.js:18:14
+Module not found: Default condition should be last one
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/@grammyjs+conversations@1.1.2_grammy@1.17.2/node_modules/@grammyjs/conversations/out/conversation.js
+./node_modules/.pnpm/@grammyjs+conversations@1.1.2_grammy@1.17.2/node_modules/@grammyjs/conversations/out/mod.js
+./bot/index.ts
+./app/api/webhook/route.ts
+- wait compiling /_error (client and server)...
+- error ./node_modules/.pnpm/@grammyjs+conversations@1.1.2_grammy@1.17.2/node_modules/@grammyjs/conversations/out/deps.node.js:18:14
+Module not found: Default condition should be last one
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./node_modules/.pnpm/@grammyjs+conversations@1.1.2_grammy@1.17.2/node_modules/@grammyjs/conversations/out/conversation.js
+./node_modules/.pnpm/@grammyjs+conversations@1.1.2_grammy@1.17.2/node_modules/@grammyjs/conversations/out/mod.js
+./bot/index.ts
+./app/api/webhook/route.ts
+```
+
+`next` version: `13.4.13`",False
+Feature Request: oli: copy to directory,"Hi folks! When I use `oli` copy file from s3 to local, I faced this error message:
+
+```bash
+$ oli cp limithub-config://limithub/limithub-backend-dev-task-definitions.json .
+Error: Unexpected (temporary) at write, context: { service: fs, path: home/strrl/temp } => is a directory, source: Is a directory (os error 21)
+```
+
+I am not sure it's on purpose or not.
+
+What do you think about when target is a directory, copy to a new file with the same filename from the source?
+
+like `oli cp limithub-config://limithub/limithub-backend-dev-task-definitions.json .` would create a new file with filename `limithub-backend-dev-task-definitions.json` in the current directory.
+
+
+And I am glad to contribute to this feature, please assign it to me if it works. :heart: 
+
+
+Thanks! 
+",True
+"Always get ""Invalid Tesseract version"" when tesseract not exit as 0","It's better to carry out the exact  exitcode when tesseract does not work as expected.
+
+https://github.com/thomasgruebl/rusty-tesseract/blob/4a0c3da00cd38b8157e833ea0547c72df8e0cbb7/src/tesseract/command.rs#L61-L64",False
+RemoteCluster: Sync Chaos Experiements Status back to the Management Cluster,"## Feature Request
+
+**Is your feature request related to a problem? Please describe:**
+<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+
+**Describe the feature you'd like:**
+<!-- A clear and concise description of what you want to happen. -->
+
+**Describe alternatives you've considered:**
+<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+
+**Teachability, Documentation, Adoption, Migration Strategy:**
+<!-- If you can, explain some scenarios how users might use this, situations it would be helpful in. Any API designs, mockups, or diagrams are also helpful. -->
+",True
+Hi Community! I create a successor for this project!,"Hi Community! I have operated a homelab kubernetes cluster for years, and I also used cloudflare tunnel to expose my services.
+
+I used to use nginx-ingress / traefik to expose the service on local nodes, then used a standalone cloudflared for tunneling. I started to find a way that could use cloudflared as the implementation of Ingress Controller. I found this official project but it does not work well. I also found [adyanth/cloudflare-operator](https://github.com/adyanth/cloudflare-operator), but it seems it start to use CRD, not the native Ingress.
+
+So I build another Ingress Controller for exposing ingress to the Internet directly with the native Kubernetes Ingress resources!
+
+https://github.com/strrl/cloudflare-tunnel-ingress-controller
+
+Please take a try! And feel free to open issues / prs / discussions. :heart: 
+",False
+💡 cloudflared Cloudflare Tunnel HTTP Traffic Metrics,"**Describe the feature you'd like**
+
+Provide more Prometheus metrics data about the traffic.
+
+
+**Describe alternatives you've considered**
+
+I run `cloudflared` inside of kubernetes, so I would monitoring the network traffic about pod.
+
+But there is NO way to get detailed metrics like ""how much traffic used for ingress and egress with domain `service1.example.com` "".
+
+**Additional context**
+
+Now cloudflared already provides some metrics in proxy/metrics.go, like counter by http response code.
+
+I want more metrics like the counter of proxied traffic data in bytes, for both ingress and egress.
+
+I found that I could append more instrument behavior around `proxy/metrics.go` to accomplish this goal.
+
+Also the well-design of metrics(name, tags) should be considered.
+
+What do you think about it?
+",True
+could NOT convert GIF to animated webp,"**Describe the bug**
+A clear and concise description of what the bug is.
+
+I found that webp_server_go could not resolve animated images, like GIF.
+
+After the conversion, it is NOT animated anymore.
+
+
+
+**To Reproduce**
+Steps to reproduce the behavior
+
+before: https://strrl.dev/post/weekly-recap/2023/21-selfdrivinglongtrip/Peek2023-05-2215-53.gif 
+
+**Expected behavior**
+A clear and concise description of what you expected to happen.
+
+**Screenshots and logs**
+If applicable, add screenshots and logs to help explain your problem.
+
+**Environment (please complete the following information):**
+ - OS: [e.g. Linux]
+ - version or branch[e.g. 0.0.3, master]
+
+**Additional context**
+Add any other context about the problem here.
+",False
+Multi Arch Supports (eg. arm64) for gcr.io/k8s-prow images,"<!-- Please only use this template for submitting enhancement requests -->
+
+**What would you like to be added**:
+
+Making the Prow bot could run on arm64 machines
+
+**Why is this needed**:
+
+We have a multi-arch (x86 and arm64) kubernetes cluster for testing chaos-mesh. And we are trying to make prow run in this cluster. And I noticed that image like `gcr.io/k8s-prow/prow-controller-manager` is only available in x86. 
+
+So I must use `nodeSelector` to make the pods run on x86 nodes.
+
+Providing multi-arch images and making users ignore the arch-platform things is much better.
+
+What do you think about it? If this proposal makes sense, I would be very glad to contribute to it. :D
+",True
+resolve complicated build scripts and makefile,"## Feature Request
+
+**Is your feature request related to a problem? Please describe:**
+<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+
+Yes. 
+
+Currently, we are facing some situations:
+
+- complicated makefile and build scripts, especially the coupled binding between build scripts and dev-env containers.
+- bad make performance
+- using too many (~23) environment variables for configuring/tunning during the building process
+
+
+**Describe the feature you'd like:**
+<!-- A clear and concise description of what you want to happen. -->
+
+The goals for this issue are:
+
+- decouple makefile and dev container
+    - makefile for local build only
+    - dev container is optional, just provide executable binaries(gcc, go) and services (docker)
+- reduce the number of ENVs
+    - only provide required ENV/Variables in Makefile, like GO, CGO, LDFLAGS...
+    - append documentation for the rest ENVs.
+    - remove configurable tags like `IMAGE_<NAME>_TAG`. Always use one ENV(like `IMAGE_TAG`?) for a consistent tag for all images (or just always use `latest`).
+- speed up the performance of `make` command
+- update contributing.md, a better way to onboard Chaos Mesh contributing
+
+
+**Describe alternatives you've considered:**
+<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+
+No other alternatives right now.
+
+**Teachability, Documentation, Adoption, Migration Strategy:**
+<!-- If you can, explain some scenarios how users might use this, situations it would be helpful in. Any API designs, mockups, or diagrams are also helpful. -->
+
+There are several practices in other projects could be references:
+
+- vdev in vector: https://github.com/vectordotdev/vector/tree/master/vdev
+- odev in opendal: https://github.com/apache/incubator-opendal/blob/main/odev
+- devcontainer: https://container.dev
+",True
+Integration Test on AMD64 Keeps Failing ,"## Bug Report
+
+**What version of Kubernetes are you using?**
+<!-- You can run `kubectl version` -->
+
+N/A 
+
+**What version of Chaos Mesh are you using?**
+<!-- You can run `kubectl exec -n chaos-mesh {chaos-controller-manager-pod-name} -- /usr/local/bin/chaos-controller-manager -version` -->
+
+N/A
+
+**What did you do? / Minimal Reproducible Example**
+<!-- If possible, provide a recipe for reproducing the error. How you installed chaos-mesh. -->
+
+I noticed that Integration Tests faced continues failing recent days:
+
+<img width=""1337"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/229829283-022946cf-91bc-4775-87e0-9f8df4fd8da6.png"">
+
+
+**What did you expect to see?**
+
+**What did you see instead?**
+
+**Output of chaosctl**
+<!-- If it is related to networkchaos, stresschaos or iochaos, chaosctl would help maintainers better find the bug. -->
+<!-- See pkg/chaosctl/README.md for detail -->
+",False
+bug: chaos-tproxy-controller does not deserialize `RawFile` properly with `RawFile.Contents`,"I am working on this PR: https://github.com/chaos-mesh/chaos-mesh/pull/3956
+
+But I still face some trouble with that chaos-tproxy does not accept the chaos. The log saied:
+
+```
+
+..
+2023-03-10T10:16:44.544Z        INFO    records records/controller.go:118       iterating record        {""record"": {""id"":""chaos-mesh-6861/http-test-78f645fc9c-42q4d"",""selectorKey"":""."",""phase"":""Not Injected/Wait"",""injectedCount"":0,""recoveredCount"":0,""events"":[{""type"":""Failed"",""operation"":""Apply"",""message"":""failed to apply for pod chaos-mesh-6861/http-test-78f645fc9c-42q4d, status(400): invalid type: string \""LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURwVENDQW8yZ0F3SUJBZ0lVUTFuZDdweFNQTFJqOTdXYk1RZTUvNkJqVnJFd0RRWUpLb1pJaHZjTkFRRUwKQlFBd1ZqRUxNQWtHQTFVRUJoTUNRVlV4RXpBUkJnTlZCQWdNQ2xOdmJXVXRVM1JoZEdVeElUQWZCZ05WQkFvTQpHRWx1ZEdWeWJtVjBJRmRwWkdkcGRITWdVSFI1SUV4MFpERVBNQTBHQTFVRUF3d0dZVzVrY21WM01CNFhEVEl6Ck1ETXhNREE1TWpNd01Gb1hEVE16TURNd056QTVNak13TUZvd1ZqRUxNQWtHQTFVRUJoTUNRVlV4RXpBUkJnTlYKQkFnTUNsTnZiV1V0VTNSaGRHVXhJVEFmQmdOVkJBb01HRWx1ZEdWeWJtVjBJRmRwWkdkcGRITWdVSFI1SUV4MApaREVQTUEwR0ExVUVBd3dHWVc1a2NtVjNNSUlCSWpBTkJna3Foa2lHOXcwQkFRRUZBQU9DQVE4QU1JSUJDZ0tDCkFRRUFuU2dkdWFrQ0ltN2F1TkQ0RTVpTFNjRWJsVFk4YTMzckoxMmdJNFFENXF0WG9LeXo5ZVJoUE5ZUnA3blUKYnVZMmsrdDB3SXlKQ2czRmpaYldrSDRIWTFaTGJBSWJHSnBNeCt5bjZGSzFKb2U1dThUTmhDVkJjaGttT2lCbApaZTNFVThOUitPRWVkM1JpUi8raHFnM2dOYkdMNndJVU9Sak4rM21KZldxQnNsUnZGdVVaVkQ5QmU4bG1ndXZUCkVyQ2ZtcDUyODZkMlFWeE1hOFl2UzdKbmVPbHRTY0NySGJ3d1FvTG9GWS80aFBYMHlXUHNGazVDZjlpMEpzSFMKN0tpaVo5ZzhqbzF2aDBOcWhvWkdFaW9vTTQzQnk1cWwyTEgzQXpKNmJZRzdRZDNNTDBFemlUYWtSU2ZaWXo4cQpaK3RaanVmSzQ4L1VSVVBnV28zQnpWQzI0d0lEQVFBQm8yc3dhVEFmQmdOVkhTTUVHREFXZ0JSVlNZNTJVSFVFCnhLT3VSS1g3MjNTci9YS1JwREFKQmdOVkhSTUVBakFBTUFzR0ExVWREd1FFQXdJRThEQVBCZ05WSFJFRUNEQUcKaHdUQXFERUNNQjBHQTFVZERnUVdCQlNValBQTTREK1Exd1FnZytpMDRENHFhYThzbFRBTkJna3Foa2lHOXcwQgpBUXNGQUFPQ0FRRUFKUExpREdEOFFDcHVXSVVYbkZIa3RwRlEyYmQ5eEZUN3J6a3JwVUV1eFBhcHRNYXB2TS9NCjRLZklKTHhUVDJ3TFRHTEdRdHF3V0xsT00rQlZKNTY2STZidGcrYzlxTlNDazhpSDBvZzZiamE0MVNGL2poSUEKWTFBWFc0ckNFUmlwYXF1bGxPbWltcm1HTFFoNWEyTlp3MHZVUGtrOUhVa3RnTGJYKzRZc25mSnJOajJydFIrTgp3MlVGam1UYUR2ZSt3MlZvZ3dpclB4ZDRLM3RHWjgrYWpuQWZ3RklIUHZPcC9rQTVjWC9ZQlNZZnNXdWgrenVHCng0TU1sMGZVaHoyWGx0Vno2aTd5U1FyWWpTRDYwekt6a0tzUTJQemZrdjVCMGNicTU1c1RCazZ3cm5iK3YycTMKNTk4bUl5S1BNVGFyN1ZIUThIa0FpNkVFMUdzTGMrN2Uzdz09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K\"", expected a sequence at line 1 column 1994"",""timestamp"":""2023-03-10T09:23:04Z""},{""<....truncated>
+```
+
+We use json rpc to communicate between chaos-tproxy and chaos-daemon, and the JSON serialization in golang would serialize bytes as base64. But `serde_json` does not use base64 when it deserialize the JSON, which means it cause the problem which mentioned formerly.
+",False
+"chaos-coredns v0.2.4, v0.2.5 not works","it refers to:
+
+- https://github.com/chaos-mesh/chaos-mesh/pull/3488#issuecomment-1461735478
+- https://github.com/chaos-mesh/chaos-mesh/pull/3967
+- https://github.com/chaos-mesh/chaos-mesh/pull/3947
+
+The reason why it does not work is the priority of coredns plugin loading has been changed:
+
+This PR https://github.com/chaos-mesh/k8s_dns_chaos/pull/21/files change `sed` into `shell >>`, which append the chaos plugin as the **last** plugin loaded by coredns, even later than the default plugin like `forward` which forward the DNS request to the upstream DNS server.  So it does not gonna be worked.
+",False
+HTTPChaos TLS: chaos controller manager does not fetch the correct secret,"## Bug Report
+
+**What version of Kubernetes are you using?**
+<!-- You can run `kubectl version` -->
+
+N/A
+
+**What version of Chaos Mesh are you using?**
+<!-- You can run `kubectl exec -n chaos-mesh {chaos-controller-manager-pod-name} -- /usr/local/bin/chaos-controller-manager -version` -->
+
+Chaos Mesh 2.5.1
+
+**What did you do? / Minimal Reproducible Example**
+<!-- If possible, provide a recipe for reproducing the error. How you installed chaos-mesh. -->
+
+Create HTTPChaos with TLS configured.
+
+**What did you expect to see?**
+
+HTTPChaos could work.
+
+**What did you see instead?**
+
+HTTPChaos does not work, with the chaos controller manager logs:
+
+```
+2023-02-24T06:35:05.238Z	ERROR	podhttpchaos	podhttpchaos/controller.go:165	unable to get secret	{""error"": ""Secret \""dep1-7f57fff956-5rrc2\"" not found""}
+  github.com/chaos-mesh/chaos-mesh/controllers/podhttpchaos.(*Reconciler).Reconcile
+  	/home/runner/work/chaos-mesh/chaos-mesh/controllers/podhttpchaos/controller.go:165
+``` 
+
+related codes:
+
+
+https://github.com/chaos-mesh/chaos-mesh/blob/64dc83baed9b667e6a826229c5bd50faa803efae/controllers/podhttpchaos/controller.go#L158-L167
+
+At line 164, the usage of client is not correct, use `request.NamepsacedName` as the secret name.
+
+
+**Output of chaosctl**
+<!-- If it is related to networkchaos, stresschaos or iochaos, chaosctl would help maintainers better find the bug. -->
+<!-- See pkg/chaosctl/README.md for detail -->
+",False
+"env images(`dev-env` and `build-env`) not rebuild in E2E tests, job `build-binary`","## Bug Report
+
+Now, `build-binary` and `build-image` are two different job runs parallel,
+
+after tagging `need-rebuild-dev-env` or `need-rebuild-build-env`, the image build be built in job `build-images`.
+
+But job `build-binary` also need these image, so it would fail.",False
+`alpha` and `beta` version not using the corresponding image tag,"## Bug Report
+
+when we release alpha or beta version , as we did not update the version in the helm chart `values.yaml` , it keeps as `latest`.
+
+That is not expected.
+
+We should find a way that could replace it with the current image tag when releasing the helm chart.
+
+And make it could execute  locally
+",False
+Require new CI for checking merge conflict marker in cherrypicks PR,"## Bug Report
+
+The current tichi-bot would push the 3-way merge content in the cherry-pick, if would easy to find with go codes, but not easy to find with `.yaml` and `.ts` file.
+
+And the last v2.5.0-beta.0 failed to build because of this issue:
+
+https://github.com/chaos-mesh/chaos-mesh/actions/runs/3514056159/jobs/5887604490
+
+I searched `<<<<<<< HEAD` with tag `v2.5.0-beta.0`, and found that the conflicts are introduced from
+
+- https://github.com/chaos-mesh/chaos-mesh/pull/3802
+- https://github.com/chaos-mesh/chaos-mesh/pull/3798
+
+
+Add a CI for checking there is no merge conflict is required if the tichi-bot keeps the current behaviour.",False
+local reproducible cotainer image build,"I was suffering with https://github.com/chaos-mesh/chaos-mesh/pull/3488
+
+The building of container images for this repo could NOT be reproducible on the local machine.
+
+It's hard to profile.
+
+I would make it could be built on the local machine, then make it works on GitHub Action. 
+
+
+:(",True
+Use code generation instead of `eval` in makefile,"Also relates to https://github.com/chaos-mesh/chaos-mesh/issues/1963
+
+Currently, we are using `eval` for rendering targets for ""building executable binary"" and ""building container"" images:
+
+https://github.com/chaos-mesh/chaos-mesh/blob/cfbca5e5becfb09b0129a8d9702a930942999730/Makefile#L172-L175
+
+https://github.com/chaos-mesh/chaos-mesh/blob/cfbca5e5becfb09b0129a8d9702a930942999730/Makefile#L211-L220
+
+It's not easy to understand and maintain that makefile with dynamic rendering with `eval`. Also, it would reduce the performance of the bash completion for the makefile.
+
+I suggest writing a go utility application, and generating `binary.generated.mk` and `container-image.generated.mk`, instead of using `eval` in `Makefile`
+",True
+`make check` failed to execute on release-2.3 and release-2.4,"## Bug Report
+
+**What version of Kubernetes are you using?**
+<!-- You can run `kubectl version` -->
+
+N/A
+
+**What version of Chaos Mesh are you using?**
+<!-- You can run `kubectl exec -n chaos-mesh {chaos-controller-manager-pod-name} -- /usr/local/bin/chaos-controller-manager -version` -->
+
+N/A
+
+**What did you do? / Minimal Reproducible Example**
+<!-- If possible, provide a recipe for reproducing the error. How you installed chaos-mesh. -->
+
+CI `ci / go verify` failed on:
+
+- https://github.com/chaos-mesh/chaos-mesh/pull/3752
+- https://github.com/chaos-mesh/chaos-mesh/pull/3754
+
+and it also failed on local machine.
+
+**What did you expect to see?**
+
+**What did you see instead?**
+
+**Output of chaosctl**
+<!-- If it is related to networkchaos, stresschaos or iochaos, chaosctl would help maintainers better find the bug. -->
+<!-- See pkg/chaosctl/README.md for detail -->
+",False
+CI: Integration Tests does NOT works on Kubernetes 1.24+,"## Bug Report
+
+**What version of Kubernetes are you using?**
+<!-- You can run `kubectl version` -->
+
+Kubernetes 1.25.2
+
+please notice that GitHub Action would use kind to bootstrap kuberntes 1.23.x, so this issue does NOT relate to the current failure on GHA.
+
+**What version of Chaos Mesh are you using?**
+<!-- You can run `kubectl exec -n chaos-mesh {chaos-controller-manager-pod-name} -- /usr/local/bin/chaos-controller-manager -version` -->
+
+latest
+
+**What did you do? / Minimal Reproducible Example**
+<!-- If possible, provide a recipe for reproducing the error. How you installed chaos-mesh. -->
+
+execute `bash ./test/integration_test/run.sh`, and it hangs at
+
+**What did you expect to see?**
+
+pass all integration tests.
+
+**What did you see instead?**
+
+
+```
+bash ./test/integration_test/run.sh
+Running test test/integration_test/auth-rbac-webhook/run.sh...
+serviceaccount/fake-sa unchanged
+role.rbac.authorization.k8s.io/pod-chaos-creation-only unchanged
+rolebinding.rbac.authorization.k8s.io/fake-sa-could-only-create-podchaos unchanged
+error: resource name may not be empty
+User ""fake-sa"" set.
+Context ""fake-sa-test"" modified.
+Please enter Username:
+```
+
+**Output of chaosctl**
+<!-- If it is related to networkchaos, stresschaos or iochaos, chaosctl would help maintainers better find the bug. -->
+<!-- See pkg/chaosctl/README.md for detail -->
+",False
+"CI: ""Integration Test"" keeps failing on AMD64 ","## Bug Report
+
+I noticed that the integration test keeps failing on AMD64:
+
+https://github.com/chaos-mesh/chaos-mesh/actions/workflows/integration_test.yml
+
+Still did not figure out the reason.
+",False
+CI: Upload Image is broken,"## Bug Report
+
+It seems that this CI has been broken for a while.
+
+https://github.com/chaos-mesh/chaos-mesh/actions/workflows/upload_image.yml
+
+It failed to build chaos-kernel, and the error message is not clear. 🥲",False
+Append SBOM section in README.md,"## Feature Request
+
+**Is your feature request related to a problem? Please describe:**
+<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+
+Yes, we want to reach 100% on CLOMonitor.
+
+
+**Describe the feature you'd like:**
+<!-- A clear and concise description of what you want to happen. -->
+
+- ~provide SBOM section in README.md~
+- automatic attach `.sbom` file to GitHub release, thanks to @g1eny0ung , introduce https://github.com/kubernetes-sigs/bom
+
+**Describe alternatives you've considered:**
+<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+
+- ~automatic attach `.sbom` file to GitHub release, it might be harder because we would also push docker images and helm charts. It's better to use documentation to explain it.~
+- provide SBOM section in README
+
+**Teachability, Documentation, Adoption, Migration Strategy:**
+<!-- If you can, explain some scenarios how users might use this, situations it would be helpful in. Any API designs, mockups, or diagrams are also helpful. -->
+
+ref:
+
+- https://github.com/chaos-mesh/chaos-mesh/issues/3696
+- https://clomonitor.io/docs/topics/checks/#sbom
+- example projects reached SBOM check: https://clomonitor.io/search?rating=a&passing_check=sbom&page=1",True
+What does `korandoru` means?,A little curious about that.,False
+chaos mesh 2.4.0 shown as pre-release on artifacthub,"## Bug Report
+<img width=""329"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/192521237-668c246a-3387-44a4-b354-d1a3b88f5b53.png"">
+",False
+chaos mesh release 2.3.2 still using `latest` images,"## Bug Report
+
+the image tag of chaos mesh 2.3.2 is wrong",False
+Failed to update helm charts from repository,"## Bug Report
+
+```
+ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the ""harbor"" chart repository
+...Successfully got an update from the ""localstack-repo"" chart repository
+...Successfully got an update from the ""nginx-stable"" chart repository
+...Successfully got an update from the ""csi-driver-nfs"" chart repository
+...Successfully got an update from the ""gremlin"" chart repository
+...Successfully got an update from the ""cilium"" chart repository
+...Successfully got an update from the ""rook-release"" chart repository
+...Successfully got an update from the ""jetstack"" chart repository
+...Successfully got an update from the ""jenkins"" chart repository
+...Successfully got an update from the ""litmuschaos"" chart repository
+...Successfully got an update from the ""chaos-mesh"" chart repository
+...Successfully got an update from the ""keptn"" chart repository
+...Successfully got an update from the ""datadog"" chart repository
+...Successfully got an update from the ""kubevela"" chart repository
+index.go:346: skipping loading invalid entry for chart ""tidb-cluster"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-cluster"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-drainer"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-drainer"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-lightning"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-lightning"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-operator"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-operator"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tikv-importer"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tikv-importer"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-backup"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+index.go:346: skipping loading invalid entry for chart ""tidb-backup"" ""master"" from https://charts.pingcap.org/: validation: chart.metadata.version ""master"" is invalid
+...Successfully got an update from the ""pingcap"" chart repository
+...Successfully got an update from the ""grafana"" chart repository
+...Successfully got an update from the ""prometheus-community"" chart repository
+...Successfully got an update from the ""traefik"" chart repository
+...Successfully got an update from the ""bitnami"" chart repository
+
+
+```",False
+Notes about compatibility with PSS(pod security standard),ref: https://github.com/chaos-mesh/chaos-mesh/issues/3610,False
+Note about the overlapping and combination of different NetworkChaos,"One `loss` NetworkChaos and another `delay` NetworkChaos would not affect on one pod at the same time, the post one would overwrite the former one.
+
+User should use `action: netem` to inject the combination NetworkChaos, which should be mentioned in the documentation.
+
+
+https://github.com/chaos-mesh/chaos-mesh/issues/3631#issuecomment-1251352396",True
+Better observability for Chaos Experiment itself,"## Feature Request
+
+**Is your feature request related to a problem? Please describe:**
+<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+
+Yes. For example, when inject `NetworkChaos` with `action: loss` with 10% percentage, and the application  uses TCP-based network protocol, it nearly makes **nothing** about the application.
+
+But something did happen! 
+
+For example, we could use `ping` and `netstat -st` to discover what happens.
+
+**Describe the feature you'd like:**
+<!-- A clear and concise description of what you want to happen. -->
+
+**Describe alternatives you've considered:**
+<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+
+**Teachability, Documentation, Adoption, Migration Strategy:**
+<!-- If you can, explain some scenarios how users might use this, situations it would be helpful in. Any API designs, mockups, or diagrams are also helpful. -->
+",True
+could not bootstrap kubernetes cluster with CNI flannel,"### What Happened?
+
+minikube version
+
+```
+minikube version
+minikube version: v1.26.1
+commit: 62e108c3dfdec8029a890ad6d8ef96b6461426dc
+```
+
+step to reproduce:
+
+- execute `minikube start --cni flannel`
+- every workload (including coredns) would stuck in `ContainerCreating` 
+- execute `k describe pod -n kube-system coredns-x-x`
+
+There would be some error message in the event
+
+```
+  Warning  FailedCreatePodSandBox  3m                kubelet            Failed to create pod sandbox: rpc error: code = Unknown desc = [failed to set up sandbox container ""b17871cf37fec75d431480096c668f785d555f2b07d94ce1e699a9590d4f54e0"" network for pod ""coredns-6d4b75cb6d-78ktc"": networkPlugin cni failed to set up pod ""coredns-6d4b75cb6d-78ktc_kube-system"" network: missing network name:, failed to clean up sandbox container ""b17871cf37fec75d431480096c668f785d555f2b07d94ce1e699a9590d4f54e0"" network for pod ""coredns-6d4b75cb6d-78ktc"": networkPlugin cni failed to teardown pod ""coredns-6d4b75cb6d-78ktc_kube-system"" network: missing network name]
+  Normal   SandboxChanged          8s (x14 over 3m)  kubelet            Pod sandbox changed, it will be killed and re-created.
+```
+
+Manually bypass:
+
+- after I append `""name"": ""loopback""` into the `/etc/cni/net.d/200-loopback.conf`, the pod could finally be created. 
+
+
+### Attach the log file
+
+[log.txt](https://github.com/kubernetes/minikube/files/9580674/log.txt)
+
+
+### Operating System
+
+macOS (Default)
+
+### Driver
+
+Docker",False
+CI: migrating from ti-chi-bot to prow,"## Feature Request
+
+ti-chi-bot is a customized prow bot, which provides many different flavors to push development progress: https://github.com/ti-community-infra/tichi/blob/master/docs/README.md
+
+We are facing several problems with ti-chi-bot:
+
+- uncontrolled configuration: the configuration of ti-chi-bot is stored at https://github.com/ti-community-infra/configs, and none of chaos mesh maintainers/committers has permission to update the configuration. Especially when we cut the new branch to release a new version.
+- the maintaining status of ti-chi-bot is confusing: on the one hand, ti-chi-bot is still under active development, and a few commits would be pushed weekly. But the documentation, RFC, and other collaboration are not updated and transparent anymore. So it's hard to figure out if the bot would work as expected in the long future.
+- over-complexed review routine: plugin is the most powerful part of the ti-chi-bot/prow bot, but many of customized plugin are NOT required with Chaos Mesh. I prefer to think there is not soo heavy developing work to force us to use a restricted rule like ""issue-triage"", ""LGT<1/2/3>"" and so on. 
+
+I think what we need are:
+
+- setup reviewers for PR (maybe with `OWNER`)
+- merge PR automatically with enough approval or LGTM
+- the ability to block the PR merging process(like `/hold` when code freezing)
+- cherry-pick PR to other branches
+
+And that could be done with the native prow bot. :)
+
+CNCF had given us several compute resources for the CI workload, and we had build a kubernetes cluster on them, for running our test cases on ARM machines. I think we could use that kubernetes cluster to run our own prow bot.
+",True
+book.prow.tidb.io is not available,"## Bug Report
+
+- [x] I have searched the issues of this repository and believe that this is not a duplicate.
+
+### Related link
+
+https://book.prow.tidb.io/
+
+### Steps to reproduce(Optional)
+
+### What is expected?
+
+### What is actually happening?
+
+<img width=""1506"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/190306220-8b75a74a-2792-4e65-ba33-74fb208be2cc.png"">
+
+",False
+CI: more static code analyzer tools,"## Feature Request
+
+**Is your feature request related to a problem? Please describe:**
+No.
+
+**Describe the feature you'd like:**
+
+Introduce more static code analyzers to restrict code quality.
+
+**Describe alternatives you've considered:**
+<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+
+**Teachability, Documentation, Adoption, Migration Strategy:**
+<!-- If you can, explain some scenarios how users might use this, situations it would be helpful in. Any API designs, mockups, or diagrams are also helpful. -->
+",True
+switch versioned documentation would not change the URL,"This issue happens with versioned documentation 2.3.1.
+
+For example:
+
+1. I am watching the `Next` version documentation now:
+<img width=""1463"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/189848291-ed5b0398-5990-49db-9056-32f6e8dc1dab.png"">
+
+2. then I switch to the `2.3.1` version, the content and the tag have updated, but the URL NOT.
+
+<img width=""1192"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/189848490-e3064fcc-8e33-41e4-80ba-22da1ffa1131.png"">
+
+3. I switch to the `2.2.3` version, all of the content, tag and the URL changed:
+
+<img width=""1221"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/189848679-c9363517-2185-4b4a-80de-41b97e22dfb4.png"">
+
+
+It would mislead the URL when someone wants to share the documentation.
+
+And I think it might be related to thsi file: https://github.com/chaos-mesh/website/blob/0aa15b0896fdd5a7781e23a86b6f7e5fef489404/versioned_sidebars/version-2.3.1-sidebars.json
+
+In the former `versione_x.x.x-sidebar.json` file, each entry would specify the certain id with version prefix, like:
+
+```json
+    {
+      ""type"": ""category"",
+      ""label"": ""Tools Integration"",
+      ""items"": [
+        {
+          ""type"": ""doc"",
+          ""id"": ""version-2.2.3/integrate-chaos-mesh-into-github-actions""
+        },
+        {
+          ""type"": ""doc"",
+          ""id"": ""version-2.2.3/use-grafana-data-source""
+        },
+        {
+          ""type"": ""doc"",
+          ""id"": ""version-2.2.3/chaosctl-tool""
+        }
+      ],
+      ""collapsible"": true,
+      ""collapsed"": true
+    },
+```
+
+but in `version-2.3.1-sidebars.json`, it becomes;
+
+```json
+    {
+      ""type"": ""category"",
+      ""label"": ""Tools Integration"",
+      ""items"": [
+        ""integrate-chaos-mesh-into-github-actions"",
+        ""use-grafana-data-source"",
+        ""chaosctl-tool""
+      ]
+    },
+```
+
+exactly same with the outer `sidebar.json`.
+
+It seems the behaviors changes of `yarn docusaurus docs:version 2.3.1` makes this issue.
+
+ ",False
+"still using ""prerelease: true"" when releasing 2.3.0 and 2.3.1","I just noticed the annotation for releases 2.3.0 and 2.3.1 on artifact hub are still with ""Prerelease"":
+<img width=""348"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/189839988-d82fff1d-ae0c-4455-982d-694c240b0a6b.png"">
+
+
+https://artifacthub.io/packages/helm/chaos-mesh/chaos-mesh
+
+It's not a critical issue but we should fix it with next patch version.
+
+",False
+CI: Check Markdown links is flaky,"We notice that ""Check Markdown link"" failed a lot in the past several days: 
+
+https://github.com/chaos-mesh/chaos-mesh/actions/workflows/checklink.yaml
+
+We should update  this CI:
+
+- only trigger when `*.md` file changes
+- enrich the whitelist/ignorelist with some doamin",True
+Kubernetes 1.25 compatibility,"## Feature Request
+
+Make sure that Chaos Mesh is available on Kubernetes 1.25.",True
+Update Issue template about bug report and question,"We'd better move the issue with the label `type/question` into GitHub Discussion, it the better place to response as a stackoverflow-like Q&A and could also mark one reply as an answer.
+
+So we should update the issue template, redirect the question to GitHub Discussion",True
+create docs about monitoring chaos mesh,ref: https://github.com/chaos-mesh/chaos-mesh/issues/3575#issuecomment-1230518320,True
+maybe vendoring is not necessary,"I noticed that we have vendored the dependencies, but we do not use `-mod=vendor` when compiling the binary, so I think maybe the vendor might be not necessary. ❤️",False
+CI: Integration Test failed because of the version skew between kubernetes server and client(kubectl),"After Kubernetes 1.25.0 release, our integration test pipeline would setup Kubernetes Cluster 1.25.0 and kubectl 1.23.1:
+
+https://github.com/chaos-mesh/chaos-mesh/blob/62f9e43c6bb1a32ae19b0dba07da626fc17dce85/.github/workflows/integration_test.yml#L21-L25
+
+This would lead to this error:
+
+```
+check Kubernetes failed, error: WARNING: version difference between client (1.25) and server (1.23) exceeds the supported minor version skew of +/-1
+Error: Process completed with exit code 1.
+```
+
+https://github.com/chaos-mesh/chaos-mesh/runs/8108618285?check_suite_focus=true",False
+remove crd v1beta1 support,"Refs to https://github.com/chaos-mesh/chaos-mesh/issues/3169. We would bump the minimum support Kubernetes version to 1.19 with the next minor release.
+
+CRD v1beta1 would be removed with Kubernetes 1.16, so there is no reason to keep it.",False
+Artifacts and Docs,"I think we could make a release as the GA recently.
+
+We should attach these artifacts with the release:
+
+- [x] shared/static libraries for different platforms. https://github.com/reddio-com/reddio-sdk/blob/main/.github/workflows/unity-plugin-zip.yaml
+- [x] the `unitypackage` file for importing into Unity, including libraries and configured metadata. https://github.com/reddio-com/reddio-sdk/releases
+
+And provides these docs:
+
+- [x] How we build this DEMO on Android with Unity https://github.com/reddio-com/reddio-sdk/blob/example-unity/examples/ReddioSDKUnityExample/README.md
+- [ ] API Reference for `crypto`
+- [ ] How to build artifacts and release this project
+
+Feel free to append more entries if you think they are required.",False
+"the default value of `startingDeadlineSeconds ` is not 0, is `nil`",https://chaos-mesh.org/docs/define-scheduling-rules/#startingdeadlineseconds-field,False
+"it seems we do not append ""CNCF-CLA"" as one of the check in PR.","CNCF requires contributor to sign the CLA, but it seems we do not have it in the PR checks.",True
+CI: the bot could not create the cherrypick PR with conflicts,"After we apply the ""keep a CHANGELOG"", the cherypick processing becomes a little bit complex: 
+
+- it would often be failed with conflict, like  
+  - https://github.com/chaos-mesh/chaos-mesh/pull/3489#issuecomment-1198167181
+  - https://github.com/chaos-mesh/chaos-mesh/pull/3505#issuecomment-1200841053
+
+We want the bot could create the PR event with conflict need to be resolved",False
+kindly remind: register the domain,"Hi! I notice that you are building the website for kubewarf and other related components.
+
+I noticed that the common-used `.io` domain like `kubewarf.io`, `kubebrain.io` and `kubezoo.io` were still available.
+
+Please be harry to register them if you want to use these domain. :)",True
+"Question: more other backends support,  and native watch support ","I noticed that kubebrain already supported these storage ""backend"":
+
+- badger
+- in-memeory memkv / skiplist
+- tikv
+
+Do we have plans to support more other `KvStorage` backends like Redis, MongoDB, aerospike, and so on?
+
+Another question is, many KV Databases already support WATCH API as the basic operation, should we consider the support for the native watch API?",True
+`lets init static` failed when moving the uncompressed files,"When I follow the documentation: https://docs.let.sh/, and try to deploy the static site, this issue occurs to me.
+
+<img width=""594"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/181023815-881da8e4-7eb5-47cf-b232-808550ca33bd.png"">
+<img width=""1001"" alt=""image"" src=""https://user-images.githubusercontent.com/20221408/181023838-8acb8641-42db-4251-8d65-656869d796e0.png"">
+
+We should use another way to move files across different devices.
+
+Related codes:
+https://github.com/let-sh/cli/blob/87ce54b0344e297723e971adf5a1a75c35504a5f/cmd/init.go#L81-L87
+
+I am very pleased to contribute to fix this issue, fell free to assign this issue on me",False
+"Question: A little confusion about the stateless, availability and scalability.","I totally admit that Kubebrain is definitely a GREAT project! And thank you open-source it! 🎉🎉🎉
+
+I also considered how to make Kubernetes run on TiKV, and make the adapter layer efficient and flexible. I have some questions about the design and implementation of kubebrain. Please let me know what I missed! ❤️
+
+It seems kubebrain uses a “master-slave” architecture, and  “watch routine” only happens on the leader. So when using kubebrain with the official kube-apiserver, I could only configure the leader’s IP as the etcd server. But the leadeship would be changed, but the configuration on kube-apiserver is not easy to change. So I think currently, there is no easy way to use multi-instance kubebrain with official kube-apiserver.
+
+And I noticed that we would build a proxy for kubebrain on the ROADMAP. Until the proxy works as what etcd does, I think this problem would be resolved. :) 
+
+Or do we have other suggested ways to setup multi-instance kubebrain with official kube-apiserver?
+
+Another issue with “single master” is scalability. The performance of the master-slave architecture applications is restricted by the power of the single node. Do we have a plan or idea for migrating to “multi-master” design?",False
+How about prune the dependency of `k8s.io/kubernetes`,"### What would you like to be added?
+
+I found that the only usage of `k8s.io/kubernetes` is here:
+
+https://github.com/kubewharf/kubebrain/blob/793d0cfde538ab9d05995efdc54e9e594fb44d15/cmd/main.go#L56
+
+I am very pleased to contribute if my proposal is accepted.
+
+
+
+### Why is this needed?
+
+- It would reduce lots of time of preparing the dev environment and also the time of building kubebrain. 
+- it would reduce the concern about ""which version of `k8s.io/kubernetes` should we use"" , and many related go modules replace issues
+
+You know, the much better dev experience. :P",True
+`unstable_cache` with certain value of revalidation interval persisted incorrectly in production build,"### Link to the code that reproduces this issue
+
+https://codesandbox.io/p/devbox/blissful-alex-456x8x?layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522clyg9bptg00063j6kfzrtt3fc%2522%252C%2522sizes%2522%253A%255B70.12953367875647%252C29.870466321243526%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522clyg9bptg00023j6k3w4rphuo%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522clyg9bptg00043j6kmh0go18l%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522clyg9bptg00053j6kuo9qzs1s%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522clyg9bptg00023j6k3w4rphuo%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522clyg9bptg00013j6kpjw6zalf%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252FREADME.md%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%255D%252C%2522id%2522%253A%2522clyg9bptg00023j6k3w4rphuo%2522%252C%2522activeTabId%2522%253A%2522clyg9bptg00013j6kpjw6zalf%2522%257D%252C%2522clyg9bptg00053j6kuo9qzs1s%2522%253A%257B%2522id%2522%253A%2522clyg9bptg00053j6kuo9qzs1s%2522%252C%2522activeTabId%2522%253A%2522clylmf4wx00db3j6kdqtpusu6%2522%252C%2522tabs%2522%253A%255B%257B%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A3000%252C%2522id%2522%253A%2522clylmf4wx00db3j6kdqtpusu6%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522path%2522%253A%2522%252Fcached%252F24h%2522%257D%255D%257D%252C%2522clyg9bptg00043j6kmh0go18l%2522%253A%257B%2522id%2522%253A%2522clyg9bptg00043j6kmh0go18l%2522%252C%2522tabs%2522%253A%255B%257B%2522type%2522%253A%2522TASK_LOG%2522%252C%2522taskId%2522%253A%2522pnpm%2520run%2520start%2522%252C%2522id%2522%253A%2522clylnrz7h00xc3j6kvp3ugs6o%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%255D%252C%2522activeTabId%2522%253A%2522clylnrz7h00xc3j6kvp3ugs6o%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Atrue%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D
+
+### To Reproduce
+
+1. Build the app with `pnpm run build`
+2. Start the app with `pnpm run start`
+3. Visit page `/cached/24h`, write down the timestamp shown on the page
+4. Wait for 24 hours (or manually age the cache on FS with `touch -d ""-24 hour"" ""path/to/multiple/cached/files/of/the/corresponding/route"" -- I have tried both)
+5. Visit page `/cached/24h` again, optionally refresh as many times as you like, observe the console output and the actual rendered content
+
+### Current vs. Expected behavior
+
+#### Current Behavior
+
+1. The rendered content page `/cached/24h` remains stale, despite that:
+2. The console shows that the component is re-rendered after the reproducing step 5 (I have added a `console.log` to determine if it is re-rendered);
+3. The console shows that the fetching function wrapped by `unstable_cache` was executed after the reproducing step 5 (I have added a `console.log` inside the fetch function to determine if it is executed);
+4. The ""Modify"" and ""Change"" timestamps of the cache files are updated, but their contents are stale.
+5. The ""control group"" page `/cached/10s` is revalidating and persisting the cache correctly.
+
+The current behavior means that when the page `/cached/24h` is revalidated, although the fetch function wrapped by `unstable_cache` is executed again, **_its latest result is overwritten by stale result_** no matter what. The ""control group"" page `/cached/10s`, however, works fine, meaning that this issue is related to specific revalidation interval(s).
+
+#### Expected Behavior
+
+The page `/cached/24h` is revalidated and cached correctly, such that when visited (and refreshed) 24h later, it shows a timestamp within approximately 24h.
+
+### Provide environment information
+
+```bash
+Operating System:
+  Platform: linux
+  Arch: x64
+  Version: #1 SMP PREEMPT_DYNAMIC Sun Aug  6 20:05:33 UTC 2023
+  Available memory (MB): 4102
+  Available CPU cores: 2
+Binaries:
+  Node: 20.9.0
+  npm: 9.8.1
+  Yarn: 1.22.19
+  pnpm: 8.10.2
+Relevant Packages:
+  next: 15.0.0-canary.66 // Latest available version is detected (15.0.0-canary.66).
+  eslint-config-next: N/A
+  react: 19.0.0-rc-6f23540c7d-20240528
+  react-dom: 19.0.0-rc-6f23540c7d-20240528
+  typescript: 5.3.3
+Next.js Config:
+  output: N/A
+```
+
+
+### Which area(s) are affected? (Select all that apply)
+
+Output (export/standalone)
+
+### Which stage(s) are affected? (Select all that apply)
+
+next start (local), Vercel (Deployed)
+
+### Additional context
+
+The same happens in Next 15 RC version:
+
+* Reproducer repo: https://github.com/Luluno01/next-15-cache-reproducer
+* Reproducer deployment: https://next-15-cache.vercel.app/cached/24h
+
+The same problem exists in Next 13.5.4. Interestingly, Next 15 RC and Canary seem to NOT have this issue if the route is dynamic (e.g., `/cached/[interval]`), while in Next 13.5.4, **_the same issue happens to dynamic routes_**.",False
+`ImageResponse` not handling (merging) `headers` option correctly,"### Link to the code that reproduces this issue
+
+https://codesandbox.io/p/devbox/jovial-tree-fwk39m?file=%2Fapp%2Fpage.tsx%3A4%2C62&layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522clyg9bptg00063j6kfzrtt3fc%2522%252C%2522sizes%2522%253A%255B70%252C30%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522clyg9bptg00023j6k3w4rphuo%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522clyg9bptg00043j6kmh0go18l%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522clyg9bptg00053j6kuo9qzs1s%2522%257D%255D%252C%2522sizes%2522%253A%255B100%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522clyg9bptg00023j6k3w4rphuo%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522clyg9bptg00013j6kpjw6zalf%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252FREADME.md%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%252C%257B%2522id%2522%253A%2522clyga1kel00023j6jbbv43sut%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A4%252C%2522startColumn%2522%253A62%252C%2522endLineNumber%2522%253A4%252C%2522endColumn%2522%253A62%257D%255D%252C%2522filepath%2522%253A%2522%252Fapp%252Fpage.tsx%2522%252C%2522state%2522%253A%2522IDLE%2522%257D%255D%252C%2522id%2522%253A%2522clyg9bptg00023j6k3w4rphuo%2522%252C%2522activeTabId%2522%253A%2522clyga1kel00023j6jbbv43sut%2522%257D%252C%2522clyg9bptg00053j6kuo9qzs1s%2522%253A%257B%2522id%2522%253A%2522clyg9bptg00053j6kuo9qzs1s%2522%252C%2522tabs%2522%253A%255B%257B%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A3000%252C%2522id%2522%253A%2522clyg9yq6t00es3j6k6oy35ccs%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522path%2522%253A%2522%252F%2522%257D%255D%252C%2522activeTabId%2522%253A%2522clyg9yq6t00es3j6k6oy35ccs%2522%257D%252C%2522clyg9bptg00043j6kmh0go18l%2522%253A%257B%2522id%2522%253A%2522clyg9bptg00043j6kmh0go18l%2522%252C%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522clyg9bptg00033j6k5zx5lc4f%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522TASK_LOG%2522%252C%2522taskId%2522%253A%2522dev%2522%257D%255D%252C%2522activeTabId%2522%253A%2522clyg9bptg00033j6k5zx5lc4f%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Atrue%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D
+
+### To Reproduce
+
+1. `npm run build && npm run start`
+2. Visit root page `/`
+3. The `ImageResponse` will have a bogus `Cache-Control` header `public, immutable, no-transform, max-age=31536000, max-age=3600, s-maxage=3600`
+
+### Current vs. Expected behavior
+
+Currently, `ImageResponse` merges the `headers` options while keeping all default headers instead of respecting the explicit overwrite from the developer. E.g., ""{ headers: { 'Cache-Control': 'max-age=3600, s-maxage=3600' } }` becomes `Cache-Control: public, immutable, no-transform, max-age=31536000, max-age=3600, s-maxage=3600`.
+
+As an expected behavior, ""{ headers: { 'Cache-Control': 'max-age=3600, s-maxage=3600' } }` should become `Cache-Control: max-age=3600, s-maxage=3600`.
+
+### Provide environment information
+
+```bash
+Operating System:
+  Platform: linux
+  Arch: x64
+  Version: #1 SMP PREEMPT_DYNAMIC Sun Aug  6 20:05:33 UTC 2023
+  Available memory (MB): 4102
+  Available CPU cores: 2
+Binaries:
+  Node: 20.9.0
+  npm: 9.8.1
+  Yarn: 1.22.19
+  pnpm: 8.10.2
+Relevant Packages:
+  next: 15.0.0-canary.62 // Latest available version is detected (15.0.0-canary.62).
+  eslint-config-next: N/A
+  react: 19.0.0-rc-6f23540c7d-20240528
+  react-dom: 19.0.0-rc-6f23540c7d-20240528
+  typescript: 5.3.3
+Next.js Config:
+  output: N/A
+```
+
+
+### Which area(s) are affected? (Select all that apply)
+
+Not sure
+
+### Which stage(s) are affected? (Select all that apply)
+
+next dev (local), next start (local), Vercel (Deployed)
+
+### Additional context
+
+_No response_",False
+`req.log.*` not working in `withAxiom` wrapped route handler,"I have enabled Axiom's Vercel integration and set up the `next.config.js` file per the [installation instructions](https://axiom.co/docs/apps/vercel). The logs produced by the frontend and server components are collected by Axiom as expected, but the route handler seem to drop all the logs with objects as the payload.
+
+So, it works in client components:
+
+```TypeScript
+'use client'
+import { useLogger } from 'next-axiom'
+
+export default function Page() {
+  const log = useLogger()
+  // ...
+    log.info('This works', { uid: 'whoever' })
+  // ...
+}
+```
+
+It also works in server components:
+
+```TypeScript
+import { Logger } from 'next-axiom'
+
+export async function Page() {
+  // ...
+  const log = new Logger()
+  log.info('This also works', { uid: 'whoever' })
+  // ...
+}
+```
+
+But it does not work in route handler if there is an object passed to the log method as the second argument:
+
+```TypeScript
+import { withAxiom } from 'next-axiom'
+
+export const GET = withAxiom(async req => {
+  // ...
+  req.log.info('This does NOT work', { uid: 'whoever' })
+  req.log.error('This does NOT work', { uid: 'whoever' })
+  await req.log.flush() // This does not help
+  // ...
+})
+```
+
+As long as one of the buffer log entries contains an object as its payload, the entire batch is dropped. This is evidenced by the following:
+
+```TypeScript
+import { withAxiom } from 'next-axiom'
+
+export const GET = withAxiom(async () => {
+  // ...
+  req.log.info('This does NOT work', { uid: 'whoever' })
+  req.log.error('This does NOT work', { uid: 'whoever' })
+  req.log.info('This does NOT work')
+  await req.log.flush()
+  req.log.info('This works')
+  // ...
+})
+```",False
+Import pdfjs-dist not working correctly,"### Link to the code that reproduces this issue
+
+https://github.com/Luluno01/pdfjs-dist-import-reproducer
+
+### To Reproduce
+
+1. Start the application in development mode (`next dev`)
+2. Open home page (`/`)
+3. Got an error in dev server console ""Attempted import error: 'getDocument' is not exported from 'pdfjs-dist' (imported as 'pdfjs')."" and `getDocument` being `undefined`.
+
+### Current vs. Expected behavior
+
+The ESM package `pdfjs-dist` should be imported correctly. The actual outcome, however, is nothing will be imported -- all exported objects are `undefined`, including the default export.
+
+### Verify canary release
+
+- [X] I verified that the issue exists in the latest Next.js canary release
+
+### Provide environment information
+
+```bash
+Operating System:
+  Platform: win32
+  Arch: x64
+  Version: Windows 11 Pro
+Binaries:
+  Node: 21.1.0
+  npm: N/A
+  Yarn: N/A
+  pnpm: N/A
+Relevant Packages:
+  next: 14.0.3-canary.1
+  eslint-config-next: N/A
+  react: 18.2.0
+  react-dom: 18.2.0
+  typescript: 5.1.3
+Next.js Config:
+  output: N/A
+```
+
+
+### Which area(s) are affected? (Select all that apply)
+
+App Router, TypeScript (plugin, built-in types)
+
+### Additional context
+
+Same problem with version ""13.5.4"" and version ""13.0.0"".",False
+`useLogger` returns a new object on every render,"## Cause
+
+The client-side hook `useLogger` returns a new, unmemorized logger object on every render.
+
+https://github.com/axiomhq/next-axiom/blob/b85adae38d081fa536d6d0a1289d5062e7e7472b/src/hooks.ts#L20-L21
+
+## Details
+
+It is legit and common for users to use a logger inside `useEffect` or `useCallback` hooks. In order to make full use of eslint's static hook dependency analysis to rule out any potentially unwanted bug due to missing hook dependency, it requires the programmer to explicitly add all dependencies used by the hook, including the logger. The `useLogger` hook, however, returns a new logger object on every render, forcing users to manually memorize the logger or dangerously disable ESLint static hook dependency analysis with `// eslint-disable react-hooks/exhaustive-deps`. Otherwise, it either leads to infinite re-render or a linting error.
+
+## Example
+
+```TSX
+'use client'
+import { useEffect, useState } from 'react'
+import { useLogger } from 'next-axiom'
+
+export default function Blog({ id }: { id: string }) {
+  const log = useLogger()
+  const [ blog, setBlog ] = useState<{ title: string, body: string }>()
+  useEffect(() => {
+    async function fetchBlog() {
+      const res = await fetch(`/api/blog/${id}`)
+      setBlog(await res.json()) // Triggers re-render
+    }
+    fetchBlog().catch(err => log.error('Failed to fetch blog', { err }))
+  }, [ id, log ]) // `log` changes after `setBlog` triggering a re-render => infinite loop
+  return <>
+    <h1>{blog.title}</h1>
+    <p>{blog.body}</p>
+  <>
+}
+```",False
+Early iOS messages (from Unity to React Native) got dropped,"When reentered Unity view for the second time, some messages sent from Unity a few milliseconds after mounted was dropped and were not passed to `onMessage` callback. Any workaround/fix that can avoid implementing a TCP-like protocol?",False
+Cannot updateActivityToTargets,"All of the following legit use cases return the same 404 error:
+
+* Adding an activity and then `feed.updateActivityToTargets(act.foreign_id, act.time, act.to)` (using the same feed) immediately (or later)
+* Adding an activity and then `feed.updateActivityToTargets(act.foreign_id, act.time, undefined, [ 'xxx:yyy' ])` (using the same feed) immediately (or later)
+* Fetching an activity from the feed (where the activity was added to) and then `feed.updateActivityToTargets(act.foreign_id, act.time, act.to)` (using the same feed)
+* Fetching an activity from the feed (where the activity was added to) and then `feed.updateActivityToTargets(act.foreign_id, act.time, undefined, [ 'xxx:yyy' ])` (using the same feed)
+
+I have tried the following ways to create the activity:
+
+* Adding the activity with `:` (colon) and lower-case letters in the foreign ID
+* Adding the activity with `-` (hyphen) and lower-case letters in the foreign ID
+* Adding the activity with `_` (underscore) and lower-case letters in the foreign ID
+* Adding the activity with pure lower-case letters in the foreign ID
+* Manually fixing the timestamp by appending the trailing `Z`
+
+```TypeScript
+const feed = client.feed('foo', 'bar')
+act = await feed.addActivity({
+  actor: client.user('nobody'),
+  verb: 'add',
+  object: 'test:foo',
+  foreign_id: 'test:foo',
+  to: [ 'user:nobody' ]
+})
+await feed.updateActivityToTargets(act.foreign_id, act.time, act.to)
+// activity is not found for the couple foreign_id=test:foo, time=xxx +0000 UTC
+await feed.updateActivityToTargets(act.foreign_id, act.time, undefined, [ 'user:bar' ])
+// activity is not found for the couple foreign_id=test:foo, time=xxx +0000 UTC
+// ...
+```",False
+Unity 2021.3.21f1 wants to access mUnityPlayer field,"After upgrading to editor version 2021.3.21f1, Android build is no longer working:
+
+```
+E Unity   : AndroidJavaException: java.lang.NoSuchFieldError: no ""Ljava/lang/Object;"" field ""mUnityPlayer"" in class ""Lcom/example/MainActivity;"" or its superclasses
+E Unity   : java.lang.NoSuchFieldError: no ""Ljava/lang/Object;"" field ""mUnityPlayer"" in class ""Lcom/example/MainActivity;"" or its superclasses
+E Unity   :      at com.unity3d.player.UnityPlayer.nativeRender(Native Method)
+E Unity   :      at com.unity3d.player.UnityPlayer.access$500(Unknown Source:0)
+E Unity   :      at com.unity3d.player.UnityPlayer$e$1.handleMessage(Unknown Source:126)
+E Unity   :      at android.os.Handler.dispatchMessage(Handler.java:102)
+E Unity   :      at android.os.Looper.loop(Looper.java:233)
+E Unity   :      at com.unity3d.player.UnityPlayer$e.run(Unknown Source:20)
+E Unity   :   at UnityEngine.AndroidJNISafe.CheckException () [0x00000] in <00000000000000000000000000000000>:0
+E Unity   :   at UnityEngine.AndroidJNISafe.GetFieldID (System.IntPtr clazz, System.String name, System.String sig) [0x00000] in <00000000000000000000000000000000>:0
+E Unity   :   at UnityEngine._AndroidJNIHelper.GetFieldID (System.IntPtr jclass, System.String fieldName, System.Str
+```
+
+Somehow the Unity native code wants to access `mUnityPlayer` field of current activity class, which is never defined but it worked in previous versions. After looking into the built-in `UnityPlayerActivity` I found `protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code`, which has been there before it breaks. So it looks like there is change in the native code, but I can't find the source code of it.",False
+Options for `client.reactions.filter` behave differently with server-side auth and client-side auth,"When trying to filter child reactions that a specific user made to a specific reaction, I use this code snippet:
+
+```TypeScript
+const likes = (await client.reactions.filter({
+  reaction_id: 'some-comment-id',
+  filter_user_id: 'some-user-id',
+  kind: 'like',
+  limit: 1
+}).results
+```
+
+I use `filter_user_id` (which is not documented anywhere by itself) here because I can't use `reaction_id` and `user_id` filters at the same time. The code snippet above works well only when the `client` is using server-side auth. When using client-side auth, however, the query result will be the latest child reaction of the specified reaction, instead of the specified user's child reaction of the specified reaction.",True
+Better error stack trace when aborted for `waitFor` and `asIterator`,"# Proposal: optimize error stack trace
+
+Currently, the abortion error for `waitFor` and `asIterator` contains only information of the abortion point. A complete abortion error should indicate the following:
+
+1. Where the asynchronous operation was issued (caller stack trace of `waitFor` and `asIterator`)
+2. Why and where the asynchronous operation was aborted (whatever error caused the abortion and the stack trace of the `abort` call)
+
+The implementation may use [`Error.captureStackTrace`](https://nodejs.org/api/errors.html#errorcapturestacktracetargetobject-constructoropt) (may be polyfilled by constructing a new `Error` instance).
+
+As a result, the new abortion error will have an additional `cause` property linked to the old abortion error.",True
+nioEventLoopGroup thread prevents JVM from exiting,"Hi, I had a similar problem with #408 with both 1.18.2-1 and 1.18.2-2-SNAPSHOT. Not sure what I did wrong but here is what happened:
+
+The dependencies in my `build.gradle`:
+
+```
+implementation(""com.github.GeyserMC:opennbt:1.4"")
+implementation(""com.github.steveice10:packetlib:2.1"")
+implementation(""com.github.GeyserMC:mcauthlib:6f3d6aada5"")
+implementation(""com.github.steveice10:mcprotocollib:1.18.2-1"")  // Same with 1.18.2-2-SNAPSHOT
+```
+
+Code snippet:
+
+```Kotlin
+val threadsBefore = Thread.getAllStackTraces().keys
+
+val protocol = MinecraftProtocol(""whosyourdaddy"")
+val sessionService = SessionService()
+val client = TcpClientSession(""localhost"", 25565, protocol, null)
+client.setFlag(MinecraftConstants.SESSION_SERVICE_KEY, sessionService)
+client.addListener(object: SessionAdapter() {
+    override fun packetReceived(session: Session, packet: Packet) {
+        if (packet is ClientboundLoginPacket) {
+            session.send(ServerboundChatPacket(""Dummy client connected!""))
+        } else if (packet is ClientboundChatPacket) {
+            println(""Received chat message: ${packet.message}"")
+            println(""Session alive: ${session.isConnected}"")
+            session.disconnect(""Done"")
+        }
+    }
+
+    override fun disconnected(event: DisconnectedEvent) {
+        println(""Client disconnected: ${event.reason}"")
+        event.cause?.printStackTrace()
+    }
+})
+client.connect()
+delay(2000)
+val threadsAfter = Thread.getAllStackTraces().keys
+delay(1000)
+println(threadsAfter.subtract(threadsBefore))
+```
+
+And the output:
+
+```
+Received chat message: TranslatableComponentImpl{key=""multiplayer.player.joined"", args=[TextComponentImpl{content=""whosyourdaddy"", style=StyleImpl{color=null, obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, clickEvent=ClickEvent{action=suggest_command, value=""/tell whosyourdaddy ""}, hoverEvent=HoverEvent{action=show_entity, value=ShowEntity{type=KeyImpl{namespace=""minecraft"", value=""player""}, id=91c854ef-9614-3273-bf16-73b2960d59ac, name=TextComponentImpl{content=""whosyourdaddy"", style=StyleImpl{color=null, obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}}}, insertion=""whosyourdaddy"", font=null}, children=[]}], style=StyleImpl{color=NamedTextColor{name=""yellow"", value=""#ffff55""}, obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}
+Session alive: true
+Received chat message: TranslatableComponentImpl{key=""chat.type.text"", args=[TextComponentImpl{content=""whosyourdaddy"", style=StyleImpl{color=null, obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}, TextComponentImpl{content=""Dummy client connected!"", style=StyleImpl{color=null, obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}], style=StyleImpl{color=null, obfuscated=not_set, bold=not_set, strikethrough=not_set, underlined=not_set, italic=not_set, clickEvent=null, hoverEvent=null, insertion=null, font=null}, children=[]}
+Session alive: false
+Client disconnected: Done
+[Thread[DefaultDispatcher-worker-6,5,main], Thread[DefaultDispatcher-worker-7,5,main], Thread[nioEventLoopGroup-3-1,10,main], Thread[defaultEventLoopGroup-2-1,10,main]]
+```
+
+Note the extra NIO thread in the end which prevents JVM from exiting.",False
+"Which compiler to build the kernel with? GCC, Clang, or both?","Greetings! I am trying to run GREBE following the documentations in this repository but I found the instructions of building the kernel seemed to conflict with each other.
+
+In the main [README](https://github.com/Markakd/GREBE/blob/master/README.md):
+
+> Build kernel with our gcc
+
+In the analyzer [README](https://github.com/Markakd/GREBE/blob/master/analyzer/README.md):
+
+> build kernel as usual but make sure you are building with our custimized clang
+
+So which one should I use? Or should I build the kernel twice using both GCC and Clang? It sounds like I should build with GCC for an actual runnable kernel, and build another one (unlikely to be runnable) with Clang from scratch for analysis only. Is it correct?",False
+Missing instructions of running a minimal workflow,"Hi, I am trying to get Krace to work for a while. The code base is well organized but there is no documentation I can find in this repository. The best I can do is to guess from the Makefile and the code. So far I managed to make the following targets:
+
+1. `docker-build`: this does not seem necessary, though
+2. `build-all`: with `kernel/linux` manually checked out to tag 5.4-rc5 and `kernel/racer.patch` applied (it does not automatically apply the patch)
+3. `spec-extract`
+4. `spec-compose`
+5. `work-prep`
+
+However, `fuzz-test` never seemed to end and the following error kept appearing:
+
+```
+WARNING unable to find ledger on disk
+ERROR unable to find ledger in memory
+ERROR Analysis failed: /tmp/racer-test/rs/0
+```
+
+`fuzz-launch` also reported similar error:
+
+<details>
+  <summary><code>fuzz-launch</code> log</summary>
+  
+```
+Process Process-1:
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/shutil.py"", line 566, in move
+    os.rename(src, real_dst)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/racer-fuzzing-ext4-dart-fuzz-launch/0/ledger' -> '/tmp/racer-fuzzing-ext4-dart-fuzz-launch/0/queue/<some hash-like name>/<another hash-like name>/0/1/ledger'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 297, in _bootstrap
+    self.run()
+  File ""/usr/lib/python3.7/multiprocessing/process.py"", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File ""/krace/script/fuzz_engine.py"", line 681, in fuzzing_process
+    worker.run(seed)
+  File ""/krace/script/fuzz_engine.py"", line 447, in run
+    self._evolve(runtime, program)
+  File ""/krace/script/fuzz_engine.py"", line 660, in _evolve
+    self._evolve_ext_loop(runtime, program, True)
+  File ""/krace/script/fuzz_engine.py"", line 636, in _evolve_ext_loop
+    inner = self._evolve_mod_loop(runtime, program, True)
+  File ""/krace/script/fuzz_engine.py"", line 591, in _evolve_mod_loop
+    inner = self._evolve_rep_loop(runtime, program)
+  File ""/krace/script/fuzz_engine.py"", line 562, in _evolve_rep_loop
+    os.path.join(rpath, 'ledger')
+  File ""/usr/lib/python3.7/shutil.py"", line 580, in move
+    copy_function(src, real_dst)
+  File ""/usr/lib/python3.7/shutil.py"", line 266, in copy2
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File ""/usr/lib/python3.7/shutil.py"", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/racer-fuzzing-ext4-dart-fuzz-launch/0/ledger'
+<YYYY-MM-DD HH:MM:SS,FFF> WARNING unexpected death of worker instances
+```
+</details>
+
+All these targets were built with `F=ext4 I=dart`.
+
+Could you please provide detailed instructions on how to run Krace properly? Besides, it would be really nice if you can also provide detailed explaination of each component of the code and how they correspond to the counterpart in your paper. Thanks!",True
+Java.extend cannot extend classes from private class loader: Could not determine a class loader that can see all types,"## Description
+
+I am trying to develop a JS plugin system for a third party Java application (out of my control). My system's entry point is a JS script because I want my users to be able to use Node.js APIs. The workflow is:
+
+1. Start entry script with Node.js (OpenJDK 64-Bit Server VM GraalVM CE 22.1.0 (build 17.0.3+7-jvmci-22.1-b06, mixed mode, sharing))
+2. Load third party application's entry class and start its main method
+3. Getting a class from the third party application, passing it to JS
+4. Call `Java.extend` on that class in JS
+
+And then the error:
+
+> TypeError: Could not determine a class loader that can see all types: [class com.example.Foo]
+
+## Workaround(s) Tried (Not Working)
+
+1. Set context class loader via `java.lang.Thread.currentThread().setContextClassLoader` in JS: `Java.extend` and `Java.type` seem to be still using the old class loader.
+2. ""specify a hostClassLoader when creating a Context (via `Context.newBuilder(""js"").hostClassLoader(....).build();`)."" as mentioned in #182 : not possible because Node.js is the entry point.
+
+## Minimal Reproducer
+
+`com/example/Main.java`, built and bundled into `build/libs/main.jar`.
+
+```java
+package com.example;
+
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
+
+public class Main {
+    public static Class<?> getFoo() throws MalformedURLException, ClassNotFoundException {
+        File file = new File(""build/libs/foo.jar"");
+        URLClassLoader loader = new URLClassLoader(new URL[]{ file.toURI().toURL() }, Main.class.getClassLoader());
+        return loader.loadClass(""com.example.Foo"");
+    }
+}
+```
+
+`com/example/Foo.java`, built and bundled into `build/libs/foo.jar`.
+
+```java
+package com.example;
+
+public class Foo {
+    public String hello() {
+        return ""Hello, foo"";
+    }
+}
+```
+
+`main.js`, the entry script.
+
+```JavaScript
+const Foo = Java.type('com.example.Main').getFoo()
+console.log((new Foo).hello())
+// Hello, foo
+const SubFoo = Java.extend(Foo, { hello() { return ""Hello, subfoo"" } })
+// TypeError: Could not determine a class loader that can see all types: [class com.example.Foo]
+console.log((new SubFoo).hello())
+```
+
+Start the script with:
+
+```bash
+node --jvm --vm.cp=build/libs/main.jar main.js
+```
+
+Output:
+
+```
+Hello, foo
+/anonymous/main.js:3
+const SubFoo = Java.extend(Foo, { hello() { return ""Hello, subfoo"" } })
+                    ^
+
+TypeError: Could not determine a class loader that can see all types: [class com.example.Foo]
+    at Java.extend (native)
+    at /anonymous/main.js:3:21
+    at ModuleWrap.evaluate (native)
+    at ModuleJob.run (node:internal/modules/esm/module_job:197:25)
+    at async Promise.all (index 0)
+    at async ESMLoader.import (node:internal/modules/esm/loader:337:30)
+    at async loadESM (node:internal/process/esm_loader:88:11)
+    at async handleMainPromise (node:internal/modules/run_main:58:1)
+```
+
+## Expected Bahavior / New Feature Requested
+
+`Java.extend` and `Java.type` react to context class loader change properly. Alternatively, make `Java.extend` and `Java.type` accept a `classLoader` parameter, such that the following code will work:
+
+```JavaScript
+const Foo = Java.type('com.example.Main').getFoo()
+const SubFoo = Java.extend(Foo, { hello() { return ""Hello, subfoo"" } }, Foo.getClassLoader())
+```
+",True
+Failed to build built-in.bc files,"Hi, I am following the [instructions](https://github.com/compsec-snu/razzer/blob/master/docs/static-analysis.md) to build bitcode files. However, after running `./build-kernel.sh --config configs/static_analysis_v4.16.mk`, for `built-in.*`, **only `built-in.o` files were built but no `built-in.bc`**. For other files, e.g., `kernel/pid.c`, the corresponding `.o` files and `.bc` files were built.
+
+The `./build-kernel.sh` scripts also failed because of a bunch `undefined reference to xxx` errors when executing the command `tools/llvmlinux/arch/all/bin/llvm-link-bc.sh -m elf_x86_64 -z max-page-size=0x200000 --build-id -o .tmp_vmlinux1 -T ./arch/x86/kernel/vmlinux.lds --whole-archive built-in.o --no-whole-archive --start-group lib/lib.a arch/x86/lib/lib.a --end-group`, according to `tmp/log`. As pointed out [here](https://github.com/compsec-snu/razzer/issues/11#issuecomment-526966055), I can ignore the link error because it was expected, but I cannot find any `built-in.bc` files built for subsequent analysis.
+
+Any ideas? Thanks!",False
+Memory event example freezes the guest,"## Environment
+
+* Intel(R) Xeon(R) CPU E5-2620 v4
+* Xen 4.11.4-pre (Ubuntu 4.11.3+24-g14b62ab3e5-1ubuntu2) (ubuntu-devel-discuss@lists.ubuntu.com) (gcc (Ubuntu 9.2.1-31ubuntu3) 9.2.1 20200306) debug=n  Tue Mar 10 09:04:06 UTC 2020
+* libvmi commit 17190c623941f3b84baaf1e6ec00d902ff207e15
+* Guest kernel (1): Linux v5.15 built from source
+* Guest kernel (2): v5.10.0-9 from debian-live-11.1.0-amd64-gnome+nonfree.iso
+
+## Alternative Environment
+
+*This setup produces the same result.*
+
+Everything is mostly the same except I used Xen built from source:
+
+* Xen (tag RELEASE-4.15.1): 4.15.1 (untitled@) (gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0) debug=n Mon Nov 29 12:41:37 UTC 2021
+
+## Reproducing Steps
+
+1. Build libvmi from source and install
+2. Boot guest OS
+3. Keep the guest idle
+4. Run `mem-event-example <guest name>`
+
+## Expectation
+
+* The guest runs normally (presumably slower but that's fine)
+* The example program prints out **different** executed instruction addresses which imply a **normal** execution trace
+
+## Actual Result
+
+* The guest froze immediately, not responding to network traffic or mouse/keyboard input, not updating the screen
+* The example program successfully registered the memory event and was receiving events, but all the events were tied to the same instruction address
+* `xl list` showed the guest was in an unknown state (`------`)
+
+## Extra Information
+
+For the v5.15 kernel, I `addr2line`-ed the address and it is `kernel/locking/spinlock.c:153`. Does this mean the memory event is somehow breaking the spinlock?
+
+Any ideas?",False
+Block is not lifted correctly when encountering some instructions,"<!--
+*Disclaimer:
+The angr suite is maintained by a small team of volunteers.
+While we cannot guarantee any timeliness for fixes and enhancements, we will do our best.
+For more real-time help with angr, from us and the community, join our [Slack.](http://angr.io/invite/)*
+-->
+---
+
+**Describe the bug.**
+<!--
+Please include a clear and concise description of what the bug is.
+-->
+
+Block is not lifted correctly when encountering some instructions without throwing an error.
+
+These instructions are known to fail to lift:
+
+```
+0f 32                	rdmsr
+0f 0b                	ud2
+8e d8                	mov    %eax,%ds
+8e c0                	mov    %eax,%es
+8e d0                	mov    %eax,%ss
+8e e0                	mov    %eax,%fs
+8e e8                	mov    %eax,%gs
+```
+
+**Environment Information.**
+<!--
+Many common issues are caused by problems with the local Python environment.
+Before submitting, double-check that your versions of all modules in the angr suite (angr, cle, pyvex, ...) are up to date.
+Please include the output of `python -m angr.misc.bug_report` here.
+-->
+
+```
+/undisclosed/env/lib/python3.9/site-packages/angr/misc/bug_report.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+angr environment report
+=============================
+Date: 2021-08-27 21:31:42.040067
+Running in virtual environment at /undisclosed/env
+Platform: linux-x86_64
+Python version: 3.9.5 (default, May 11 2021, 08:20:37) 
+[GCC 10.3.0]
+######## angr #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/angr
+Pip version angr 9.0.9506
+Couldn't find git info
+######## ailment #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/ailment
+Pip version ailment 9.0.9506
+Couldn't find git info
+######## cle #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/cle
+Pip version cle 9.0.9506
+Couldn't find git info
+######## pyvex #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/pyvex
+Pip version pyvex 9.0.9506
+Couldn't find git info
+######## claripy #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/claripy
+Pip version claripy 9.0.9506
+Couldn't find git info
+######## archinfo #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/archinfo
+Pip version archinfo 9.0.9506
+Couldn't find git info
+######## z3 #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/z3
+Pip version z3-solver 4.8.12.0
+Couldn't find git info
+######## unicorn #########
+Python found it in /undisclosed/env/lib/python3.9/site-packages/unicorn
+Pip version unicorn 1.0.2rc4
+Couldn't find git info
+######### Native Module Info ##########
+angr: <CDLL '/undisclosed/env/lib/python3.9/site-packages/angr/lib/angr_native.so', handle 1853580 at 0x7f8d0056f5b0>
+unicorn: <CDLL '/undisclosed/env/lib/python3.9/site-packages/unicorn/lib/libunicorn.so', handle ea9d00 at 0x7f8d0576db20>
+pyvex: <cffi.api._make_ffi_library.<locals>.FFILibrary object at 0x7f8d06514b80>
+z3: <CDLL '/undisclosed/env/lib/python3.9/site-packages/z3/lib/libz3.so', handle 10e41c0 at 0x7f8d03bf38b0>
+```
+
+**To Reproduce.**
+<!--
+Please include *both a script to reproduce the crash, and attach the binary used, if possible*
+-->
+
+```python
+import pyvex
+from archinfo.arch_amd64 import ArchAMD64
+
+ir = pyvex.lifting.lift(b'\x8e\xd8', 0xffffffff810eb04f, ArchAMD64())  # No error
+ir.pp()  # 0 size, Ijk_NoDecode
+```
+
+**Additional context.**
+<!--
+Add any other context about the problem here.
+-->
+
+Capstone does recognize the `ud2` and `movl` instructions (but no luck with `rdmsr`):
+
+```python
+proj.factory.block(0xffffffff810eb04f, size=2).disassembly.pp()  # Non-empty output
+```
+",False
+Allow loading classes from depending plugin (or how to?),"Hi, I am wondering how I can achieve the following:
+
+## What I have
+
+* A first party plugin written in Kotlin and bundled with Kotlin runtime that provides APIs to third party plugins
+* A third party plugin who wants to invoke a suspend function exposed from the first plugin
+
+## What actually happens
+
+Case 1: bundle Kotlin runtime with the third party plugin.
+
+Result: loader constraint violation because the first party and the third party plugin have different instance of the same Kotlin runtime class `Continuation`.
+
+Case 2: don't bundle Kotlin runtime with the third party plugin.
+
+Result: `ClassNotFoundException` when **loading** the third party plugin because its class loader does not load Kotlin runtime from its depending plugin, i.e., the first plugin.
+
+---
+
+I still can't figure out why this happens only when loading Kotlin runtime classes while loading other classes defined by the depending plugin does not have such problem.",False
+Kotlin coroutine and threads problem,"Hi, I am using Kotlin to write plugins for a while. I noticed that [creating threads is discouraged](https://www.spigotmc.org/wiki/common-development-pitfalls-bungeecord/#creating-new-threads). Here is the problem: if this means Kotlin coroutine is also discouraged?",False
+Possible `ssh2Stream._channels[chan]` leak (v0.8.9),"I am forwarding out TCP connections from remote system to local system. A few hundreds of connections were established and ended (the `end` event emitted). However, the `._channels` also had hundreds of properties with numerical keys and `true` as their values. It looks something like
+
+```
+Client {
+  ...
+  _channels: {
+    '0': [Function (anonymous)],
+    '1': [Function (anonymous)],
+    '2': true,
+    '3': true,
+    '4': true,
+    '5': true,
+    '6': true,
+    '7': true,
+    '8': true,
+    '9': true,
+    '10': true,
+    ...
+    '478': true
+  },
+  ...
+}
+```
+
+After searching for all accesses to `_channels` in the code and some inspection, I found it could be a leak. Here are the related code snippets for your easy reference.
+
+Assignment to `_channels[*]`:
+
+https://github.com/mscdex/ssh2/blob/v0.8.x/lib/client.js#L1508
+
+Deletion of `_channels[*]`:
+
+https://github.com/mscdex/ssh2/blob/v0.8.x/lib/client.js#L1199
+
+Call chain of deletion:
+
+https://github.com/mscdex/ssh2/blob/v0.8.x/lib/client.js#L338
+
+https://github.com/mscdex/ssh2/blob/v0.8.x/lib/client.js#L1156
+
+It seems these properties will be removed only when the underlying SSH connection is closed:
+
+https://github.com/mscdex/ssh2/blob/v0.8.x/lib/client.js#L313-L338
+
+**This will eventually exhaust the memory because in my case the port forwarding is intended to be persistent.**",False
+[Feature Request] Make getEntries (and potentially all other I/O operations) asynchronous,"Hello, could you please make getEntries (and potentially all other I/O operations) asynchronous?
+
+I've seem a lot of requests like this in the issue page. Not sure if it requires little effort or not but many other users and I will be appreciated it if you have such plan.",True
+Failed to dump some hidden DEX,"Greetings! I am trying to use DroidUnpack to unpack some applications (installed using the `install_uninstall.sh` script) packed by Baidu and Qihoo but with no luck. It could be some unexpected misconfiguration introduced by me but it unpacked the ""Hello JNI"" successfully. Then I dug into the source code and logs and found that the dex file extracted from captured argument of `DoCall` and `Invoke` was always `system@framework@boot.oat` instead of the hidden dex file of interest, hence only the packer dex was dumped. Any ideas on why this is happening and what should I do to fix it? Am I doing something wrong that prevent DroidUnpack from working properly? Thanks!",False
+Incorrect symbolic memory addressing,"<!--
+*Disclaimer:
+The angr suite is maintained by a small team of volunteers.
+While we cannot guarantee any timeliness for fixes and enhancements, we will do our best.
+For more real-time help with angr, from us and the community, join our [Slack.](http://angr.io/invite/)*
+-->
+---
+
+**Describe the bug.**
+<!--
+Please include a clear and concise description of what the bug is.
+-->
+
+See ""To Reproduce"" section below.
+
+**Environment Information.**
+<!--
+Many common issues are caused by problems with the local Python environment.
+Before submitting, double-check that your versions of all modules in the angr suite (angr, cle, pyvex, ...) are up to date.
+Please include the output of `python -m angr.misc.bug_report` here.
+-->
+
+> angr environment report
+> =============================   
+> Date: 2020-07-24 01:10:23.897503
+> Running in virtual environment at ?:\virtualenv\angr
+> Platform: win-amd64
+> Python version: 3.8.3 (tags/v3.8.3:6f8c832, May 13 2020, 22:37:02) [MSC v.1924 64 bit (AMD64)]
+> ######## angr #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\angr
+> Pip version angr 8.20.7.6
+> Couldn't find git info
+> ######## ailment #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\ailment
+> Pip version ailment 8.20.7.6
+> Couldn't find git info
+> ######## cle #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\cle
+> Pip version cle 8.20.7.6
+> Couldn't find git info
+> ######## pyvex #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\pyvex
+> Pip version pyvex 8.20.7.6
+> Couldn't find git info
+> ######## claripy #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\claripy
+> Pip version claripy 8.20.7.6
+> Couldn't find git info
+> ######## archinfo #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\archinfo
+> Pip version archinfo 8.20.7.6
+> Couldn't find git info
+> ######## z3 #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\z3
+> Pip version z3-solver 4.8.8.0
+> Couldn't find git info
+> ######## unicorn #########
+> Python found it in ?:\virtualenv\angr\lib\site-packages\unicorn
+> Pip version unicorn 1.0.2rc4
+> Couldn't find git info
+> ######### Native Module Info ##########
+> angr: <CDLL '?:\virtualenv\angr\lib\site-packages\angr\lib\angr_native.dll', handle 7ff857800000 at 0x1056d8ae100>
+> unicorn: <CDLL '?:\virtualenv\angr\lib\site-packages\unicorn\lib\unicorn.dll', handle 7ffff0100000 at 0x1056b852df0>
+> pyvex: <cffi.api._make_ffi_library.<locals>.FFILibrary object at 0x000001056B5F1C70>
+> z3: <CDLL '?:\virtualenv\angr\Lib\site-packages\z3\lib\libz3.dll', handle 7fffeed60000 at 0x1056c747a60>
+
+**To Reproduce.**
+<!--
+Please include *both a script to reproduce the crash, and attach the binary used, if possible*
+-->
+
+```Python
+bv64 = claripy.BVS('x', 64)
+# Symbolic memory addressing is broken
+state.mem[state.regs.sp + 0x20].qword = bv64
+print(state.mem[state.regs.sp + 0x20].dword)
+# <uint32_t <BV32 Reverse(x_15_64[7:0] .. Reverse(x_15_64)[55:32])> at r13_init_13_32 + 0x20>
+# Correct but <uint32_t <BV32 x_15_64[31:0]> at r13_init_13_32 + 0x20> is preferable
+print(state.mem[state.regs.sp + 0x24].dword)
+# <uint32_t <BV32 mem_3_16_32{UNINITIALIZED}> at r13_init_13_32 + 0x24>
+# Incorrect, expecting <uint32_t <BV32 x_15_64[63:32]> at r13_init_13_32 + 0x20> at r13_init_13_32 + 0x24>
+
+# Concrete memory addressing works fine
+state.mem[0x00].qword = bv64
+print(state.mem[0x00].dword)
+# <uint32_t <BV32 x_15_64[31:0]> at 0x0>
+# Correct
+print(state.mem[0x04].dword)
+# <uint32_t <BV32 x_15_64[63:32]> at 0x4>
+# Correct
+```
+
+**Additional context.**
+<!--
+Add any other context about the problem here.
+-->
+",False
+"How to avoid <BV32 SignExt(16, x)> from being ""simplified"" to <BV32 x[15:15] .. x[15:15] .. ... .. x>","<!--
+*Disclaimer:
+The angr suite is maintained by a small team of volunteers.
+While we cannot guarantee any timeliness for fixes and enhancements, we will do our best.
+For more real-time help with angr, from us and the community, join our [Slack.](http://angr.io/invite/)*
+-->
+
+<!--
+
+**Tips:**
+
+Before submitting, make sure that you:
+
+* Search the Issues page for a similar question.
+* Search the [Documentation](http://docs.angr.io/) for an answer, as well as our library of [examples](https://github.com/angr/angr-doc/tree/master/examples)
+* Are running the latest versions of angr and its components.  angr is rapidly-evolving!
+* Ask your question on [Slack](http://angr.io/invite/) instead, if it is brief.
+
+-->
+
+---
+
+<!--
+Ask your question here.
+-->
+
+I got `<BV32 SignExt(16, x)>` as `state.inspect.reg_write_expr` but got `<BV32 x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x[15:15] .. x>` as the actual value written. How to avoid this? `<BV32 SignExt(16, x)>` is preferable since it is more concise to be processed.
+
+I stepped into Angr's source code and did not find any switch to turn such ""simplification"" off.
+",True
+Allow disabling simplification,"<!--
+*Disclaimer:
+The angr suite is maintained by a small team of volunteers.
+While we cannot guarantee any timeliness for fixes and enhancements, we will do our best.
+For more real-time help with angr, from us and the community, join our [Slack.](http://angr.io/invite/)*
+-->
+
+---
+
+**Is your feature request related to a problem? Please describe.**
+<!--
+A clear and concise description of what the problem is.
+E.g., I'm always frustrated when [...]
+-->
+
+I would sometimes like to preserve the structure of some expressions without simplifying them since that would destroy the original structure and discard some useful information.
+
+**Describe the solution you would like.**
+<!--
+A clear and concise description of what you want to happen.
+-->
+
+I want Angr to allow me to 1) completely turn off expression simplification, or 2) turn off expression simplification for some ""steps"", or 3) ""freeze"" an expression to protect it from being simplified. Besides, 4) expression produced when simplification is turned off should be freezed to avoid further simplification.
+
+**Please include a sample of what *should* work if this feature is implemented.**
+<!--
+If this is related to a Python user interface/experience feature, please include an example of what this may look like.
+If this is related to a certain kind of binary program, please attach one if possible.
+-->
+
+```Python
+# Completely disable
+claripy.set_allow_simplification(False)
+
+# Temporarily disable
+simgr.run(allow_simplification=False)
+simgr.step(allow_simplification=False)
+
+# Selective disable
+claripy.set_allow_simplification(False)
+simgr.step()
+claripy.set_allow_simplification(True)
+simgr.step()
+
+# Freeze an expression
+x = claripy.BVS('x', 32)
+expr = x & 0x1f
+protectedExpr = expr.freeze()
+print(protectedExpr & 0xff)  # Should print something like ""x & 0x1f & 0xff""
+```
+
+**Describe alternatives you have considered.**
+<!--
+A clear and concise description of any alternative solutions or features you've considered.
+-->
+
+Bypassing `SimplificationManager` manually by modifying source code.
+
+**Additional context.**
+<!--
+Add any other context or screenshots about the feature request here.
+-->
+
+N/A
+",True
+Do not use `teleport` in pathfinder,"<!--
+** DO NOT IGNORE **
+Issue posts that fail to follow the instructions here will be automatically closed!
+Please include:
+- A detailed description of your issue or feature request
+- Link to server log & Citizens config (using e.g. pastebin.com) ESPECIALLY if it's a pathfinding issue
+- **Spigot and Citizens versions!** Use in-game commands ""/version"" and ""/version citizens"" and screenshot or copy/paste the EXACT output of BOTH commands!
+- FOR LAG RELATED ISSUES: please include server specs, number of NPCs, saves.yml and timings from WarmRoast or other profiler (NOT just Spigot timings, though that can be included as well)
+-->
+
+I made a plugin that equips an NPC an elytra then makes it fly toward some target using built-in navigator (`npc.getNavigator().setTarget(location)`). The NPC flies well on its own, but once it has a passenger, it will drop the passenger during navigation. If the passenger is a player, that will sometimes crash the server (log shown below). I have looked into the [code](https://github.com/CitizensDev/Citizens2/blob/master/main/src/main/java/net/citizensnpcs/npc/ai/FlyingAStarNavigationStrategy.java) and found that it is teleporting the NPC all the time, which leads to dropping of passengers.
+
+I am currently using `NMS.look` and `entity.setVelocity` as workaround. They seem to be working well.
+
+Server log:
+
+```
+[16:20:33] [Server thread/WARN]: Entity threw exception at world:-161.10431677383428,76.74307803992303,49.70227815682517
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: java.lang.OutOfMemoryError: Java heap space
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.addConditionWaiter(AbstractQueuedSynchronizer.java:1896)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2114)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at com.lmax.disruptor.TimeoutBlockingWaitStrategy.waitFor(TimeoutBlockingWaitStrategy.java:38)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at com.lmax.disruptor.ProcessingSequenceBarrier.waitFor(ProcessingSequenceBarrier.java:56)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at com.lmax.disruptor.BatchEventProcessor.processEvents(BatchEventProcessor.java:159)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at com.lmax.disruptor.BatchEventProcessor.run(BatchEventProcessor.java:125)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[16:20:33] [Log4j2-TF-1-AsyncLogger[AsyncContext@6d06d69c]-1/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:830)
+[16:20:33] [Server thread/WARN]: java.lang.OutOfMemoryError: Java heap space
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.PacketPlayOutLightUpdate.<init>(SourceFile:50)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.PlayerChunkMap.a(PlayerChunkMap.java:1561)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.PlayerChunkMap.sendChunk(PlayerChunkMap.java:1050)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.PlayerChunkMap.a(PlayerChunkMap.java:1323)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.PlayerChunkMap.addEntity(PlayerChunkMap.java:1460)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.EntityPlayer.stopRiding(EntityPlayer.java:1093)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.EntityPlayer.stopRiding(EntityPlayer.java:1077)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.Entity.ejectPassengers(Entity.java:2052)
+[16:20:33] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_15_R1.entity.CraftEntity.eject(CraftEntity.java:653)
+[16:20:33] [Server thread/WARN]: 	at net.citizensnpcs.api.npc.AbstractNPC.teleport(AbstractNPC.java:385)
+[16:20:33] [Server thread/WARN]: 	at net.citizensnpcs.api.npc.AbstractNPC.teleport(AbstractNPC.java:416)
+[16:20:33] [Server thread/WARN]: 	at net.citizensnpcs.npc.ai.FlyingAStarNavigationStrategy.update(FlyingAStarNavigationStrategy.java:164)
+[16:20:33] [Server thread/WARN]: 	at net.citizensnpcs.npc.ai.CitizensNavigator.run(CitizensNavigator.java:158)
+[16:20:33] [Server thread/WARN]: 	at net.citizensnpcs.npc.CitizensNPC.update(CitizensNPC.java:319)
+[16:20:33] [Server thread/WARN]: 	at net.citizensnpcs.nms.v1_15_R1.entity.EntityHumanNPC.tick(EntityHumanNPC.java:439)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.WorldServer.entityJoinedWorld(WorldServer.java:759)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.WorldServer$$Lambda$3191/0x0000000801738840.accept(Unknown Source)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.World.a(World.java:856)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.WorldServer.doTick(WorldServer.java:497)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.MinecraftServer.b(MinecraftServer.java:1245)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.DedicatedServer.b(DedicatedServer.java:430)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:1112)
+[16:20:33] [Server thread/WARN]: 	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:934)
+[16:20:33] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:830)
+[16:20:33] [Server thread/ERROR]: [global] TIMING_STACK_CORRUPTION - Report this to Paper! This is a potential bug in Paper (TimingIdentifier{id=Minecraft:## tickEntity - net.citizensnpcs.nms.v1_15_R1.entity.EntityHumanNPC} did not stopTiming)
+java.lang.Throwable: null
+	at co.aikar.timings.TimingHandler.popTimingStack(TimingHandler.java:135) ~[patched_1.15.2.jar:git-Paper-105]
+	at co.aikar.timings.TimingHandler.stopTiming(TimingHandler.java:117) ~[patched_1.15.2.jar:git-Paper-105]
+	at net.minecraft.server.v1_15_R1.WorldServer.doTick(WorldServer.java:511) ~[patched_1.15.2.jar:git-Paper-105]
+	at net.minecraft.server.v1_15_R1.MinecraftServer.b(MinecraftServer.java:1245) ~[patched_1.15.2.jar:git-Paper-105]
+	at net.minecraft.server.v1_15_R1.DedicatedServer.b(DedicatedServer.java:430) ~[patched_1.15.2.jar:git-Paper-105]
+	at net.minecraft.server.v1_15_R1.MinecraftServer.a(MinecraftServer.java:1112) ~[patched_1.15.2.jar:git-Paper-105]
+	at net.minecraft.server.v1_15_R1.MinecraftServer.run(MinecraftServer.java:934) ~[patched_1.15.2.jar:git-Paper-105]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+```
+
+*It's probably not a bug of paper because the reason of crashing should be teleporting an entity with passenger(s).*
+
+The output of command `/version` on my server is: **This server is running Paper version git-Paper-105 (MC: 1.15.2) (Implementing API version 1.15.2-R0.1-SNAPSHOT)**
+The output of command `/version citizens` on my server is: **Citizens version 2.0.26-SNAPSHOT (build 1822)**
+",True
+Inconsistent availability state,"# Problem description
+
+The documentation requires users try to do nothing before receiving the `connectedToGC` event. At the same time it requires users to call methods only when the `haveGCSession` is `true`.
+
+However, I noticed that I can actually send item inspect queries and receive responses from the server when `haveGCSession` is `false`.
+
+Now I have to explain why my `haveGCSession` property is `false` and that's actually another issue:
+
+I called `user.gamesPlayed(730)` for the first time, and received `connectedToGC` event as expected. I checked the `haveGCSession` property, it was also `true` as expected. Later, I called `user.gamesPlayed([])`, the `disconnectedFromGC` event did not fired but `haveGCSession` became `false`. I also called `inspectItem` after that, no response received (that is what I expected). Finally, I called `user.gamesPlayed(730)` again and:
+
+1. No `connectedToGC` event fired
+2. `haveGCSession` was still `false`
+
+I was confused, so I called `inspectItem` to see what would happen, and I received responses to the inspect query.
+
+Also, there could be a connection leak caused by the aforementioned operation sequence as mentioned [here](https://github.com/DoctorMcKay/node-steam-user/issues/277).",False
+Avoid event listeners leak,"# Bug Description
+
+If somehow the server won't respond to an in-game item query (via `inspectItem`), there will be a `inspectItem#<item-id>` event listener leak.
+
+If you send the inspect requests too frequently or send invalid requests, the server will ignore some of the requests, i.e. the server may never respond to some specific requests. This will cause a event listener leak until the same item is finally ""inspected"" again successfully.",False
+Avoid connection leak,"## Describe the bug
+
+Connections to GC/CM will sometimes not close after a success call of `logOff`.
+
+### Bug Reproduce
+
+_Not sure if these steps can reproduce the bug 100%._
+
+1. Create `SteamUser` instance `user` and log on via `user.logOn`
+2. Create `GlobalOffensive` instance `csgo` with the `SteamUser` instance
+3. Invoke `user.gamesPlayed(730)` and wait for `connectedToGC` event emitted by `csgo` (as required by the documentation)
+4. Invoke `user.gamesPlayed([])` (this call will success in my case)
+5. Invoke `user.gamesPlayed([ 730 ])` (this call will also success in my case)
+6. Wait for a long time until the GC/CM goes down and `user` **re-logged-on** automatically
+7. Make sure `user` is ""playing"" CSGO using `user.gamesPlayed`
+8. Invoke `user.gamesPlayed([])` to tell Steam the user is no longer playing CSGO
+9. Log off via `user.logOff`
+10. Check connections using `netstat -anop`, you may possibly find some unclosed connections
+
+I am not sure which steps are not necessary and if these steps are guaranteed to reproduce the bug.
+
+## Versions
+
+* `node-steam-user` version: `4.12.4`
+* `Node.js` version: `12.10.0`
+* `node-globaloffensive` version: `2.0.2`
+
+## Screenshots and Error Logs
+
+Unfortunately, no.
+",False
+Add option to install APKs with all runtime permission granted automatically,"This can be easily done by adding `-g` option to the installation command (see Google's [documentation](https://developer.android.com/guide/topics/permissions/overview.html#viewing)).
+
+BTW, I use TypeScript a lot and I would like to request for TypeScript support XD.",True
+"Parent processes (winpty-agent.exe, etc.) do not exit when shell process exits by itself","## Environment details
+
+- OS: Windows 10 Pro 64bit
+- OS version: Windows 10 Pro 64bit Version 1809 (OS Build 17763.615)
+- node-pty version: 0.9.0-beta19
+
+## Issue description
+
+If a shell process suicides, its parent processes (not including the main node.js process) will not exit automatically unless `pty.kill()` is called. Check the following issue reproducing code:
+
+```
+import { spawn } from 'node-pty'
+import * as os from 'os'
+
+
+function getUserHome() {
+  return process.env[process.platform == 'win32' ? 'USERPROFILE' : 'HOME']
+}
+
+function getShell() {
+  switch (os.platform()) {
+    case 'win32': return process.env.ComSpec || 'cmd.exe'
+    case 'android': return '/bin/sh'
+    default: return '/bin/bash'
+  }
+}
+
+function createProcess({ cols, rows }: { cols?: number, rows?: number } = { cols: 80, rows: 30 }) {
+  const shell = getShell()
+  return spawn(shell, [], {
+    name: 'xterm-color',
+    cols: cols || 80,
+    rows: rows || 30,
+    cwd: getUserHome(),
+    env: process.env as { [key: string]: string },
+    experimentalUseConpty: true
+  })
+}
+
+function sleep(n): Promise<void> {
+  return new Promise(res => setTimeout(res, n))
+}
+
+async function main() {
+  await sleep(10 * 1000)
+  for(let i = 0; i < 10; i++) {
+    const pty = createProcess()
+    console.log(pty.pid)
+    await sleep(1000)
+    pty.write('exit\r')
+  }
+  await sleep(60 * 1000)
+}
+
+main()
+
+```
+
+The code above creates 10 `winpty-agent.exe`s and 10 `conhost.exe`. However, `node-pty` has notified user that those shell processes has exited by emitting `exit` event, misleading users that the process has exited cleanly.
+
+It seems that there is no graceful way to determine whether the process is killed by calling `pty.kill()` or exited by itself (and therefore we should call `pty.kill()` inside the `onExit` handler). However, invoking `pty.kill()` twice on the same process will raise error (can be caught though).",False
+Add Steam Guard Code and sentry file support,"I just can't log onto the CM server without providing the `SteamClient` instance an `auth_code`, which is sent to me by email from Steam. However, there is no prompt where I can enter that code. I checked the ValvePython/Steam [documentation](https://steam.readthedocs.io/en/latest/api/steam.client.html?highlight=auth_code), and add an event listener listening to `auth_code_required` event just like the example handler in that documentation. However, after the first attempt, it prompts every time it tries to log on. I do enter the Steam Guard code, but it is still asking me for a code.
+
+As for the `sentry file`, which is found in the documentation by me, seems to be able to bypass the requirement of Steam Guard code. However, I have no idea what the sentry file is.
+
+Hope your support. :P",True
+Use `bootstrap_from_webapi()` to get CM server list instead of using a built-in list,"The built-in CM server list is out-dated, please use `client.cm_servers.bootstrap_from_webapi()` to get latest CM server list.",True
+Add support for the latest version of Node.js (8.12.0 or 11.0.0),"I'm trying to build J2V8 with the latest Node.js as there is no official build with Node.js 8.x or above for Windows (x86-64). The followings are my building steps with some custom changes:
+
+1. Set Node.js version to `11.0.0` in `build_system/build_settings.py`
+2. Run `nodejs git clone`
+3. Modify the source code of Node.js manually and generate a diff file `node.patches/11.0.0.diff`
+4. Run `build -i`, select configuration 9 and enter `nodejs` to build Node.js (succeeded)
+5. Modify `njs_libs` in `cmake/NodeJsUtils.cmake`
+6. Run `build -i`, select configuration 9 and enter `j2v8` (failed when linking)
+
+The errors consist of `already defined` and `unresolved external symbol _register_xxx`. Sadly I have no I idea how to make the `njs_libs` list right :(.
+
+Here is a [repo](https://github.com/Luluno01/J2V8/) that contains the changes I've made (last two commits).",True
+Unable to limit virtual machine's memory and CPU cores when build,"I'm trying to build the latest J2V8 from source because I can't find any pre-built binary of the latest version. (The latest version in Maven Central repository is v4.6.0 with Node.js version v5.9.0, which is a definitely out-dated version for me.)
+
+So I followed the instructions in BUILDING.md and tried to build J2V8 with the build-configuration `windows-x64 @ Vagrant` (I have Vagrant and Oracle VM VirtualBox installed already) but the building process always gets my computer stuck. What I've found is that the build system setting the configuration of the virtual machine to 8 GB of memory and 4 CPU cores every time but the host machine has exactly as much as 8 GB of memory and 2 physical CPU cores. That may be the reason for my problem.
+
+Sadly, I'm not familiar with Vagrant and your build system, I don't find any configuration file responsible for this. Any solution or workaround? Thanks.",True
+`unsupported relocation' Error when Linking,"I cloned this repo and followed the instruction in README but got an error as shown below.
+
+```
+/data/data/com.termux/files/usr/bin/ld: /data/data/com.termux/files/home/src/node-android-lib/out/Release/obj.target/openssl/deps/openssl/asm/arm64-linux64-gas/sha/sha1-armv8.o: relocation R_AARCH64_PREL64 against symbol `OPENSSL_armcap_P' which may bind externally can not be used when making a shared object; recompile with -fPIC
+/data/data/com.termux/files/home/src/node-android-lib/out/Release/obj.target/openssl/deps/openssl/asm/arm64-linux64-gas/sha/sha1-armv8.o: In function `sha1_block_armv8':
+(.text+0x1240): dangerous relocation: unsupported relocation
+```
+
+Previously I download the source code of Node.js v10.6.0 and tried to make it on my android device with Termux, but failed in linking with another error `undefined reference to \`uv__xxx'`, where `xxx` represents some symbol I forgot. Hope this would help :P.",False
+Request for @types support,"~~**Is your feature request related to a problem? Please describe.**~~
+~~A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]~~
+
+**Describe the solution you'd like**
+~~A clear and concise description of what you want to happen.~~
+
+Some `.d.ts` files would be appreciated.
+
+**Describe alternatives you've considered**
+~~A clear and concise description of any alternative solutions or features you've considered.~~
+
+An alternative I have considered is writing those files by myself and open a pull request, which is not gonna happen.
+
+**Additional context**
+~~Add any other context or screenshots about the feature request here.~~
+
+Actually you can reply to this issue in Chinese if you like.
+",True
+bchlib doesn't export any methods in Python3,"Hi, I was trying to build and test this module by running `python3 setup.py build` and `python3 encode-example.py`, but it ended up the following error message:
+
+```
+Traceback (most recent call last):
+  File ""encode-example.py"", line 22, in <module>
+    ecc = bchlib.bch(ECC_POLY, ECC_BITS)
+AttributeError: module 'bchlib' has no attribute 'bch'
+```
+
+I checked out this module in Python3 interactive shell and found no method was exported by `bchlib`. Lately I found  `static PyMethodDef module_methods[]` in file bchlib.c contains no methods. I don't know  if this is the reason why `bchlib` doesn't export any methods in Python3.
+
+Much appreciated. : )",False
+config.session.cookie.rolling not work when session is not modified during a request,"<!--
+======================================================
+HELLO, and welcome to the (experimental) Sailsbot
+issue-submission system.  If you encounter any
+problems with this system, please contact us directly
+at http://sailsjs.com/contact.
+
+FIRST THINGS FIRST: before posting, please carefully
+read the contribution guide (http://bit.ly/sails-issue-guide),
+particularly if this is a security issue or an issue of a
+non-technical nature (Github org issues, code of conduct
+issues, etc.).  Those should be sent directly at
+http://sailsjs.com/contact.
+
+NOW THEN: please fill out the following info
+(Don't change text between **)
+======================================================
+### BEGIN VERSION INFO ###
+-->
+
+**Sails version**: 0.12.14
+**Node version**: v9.2.0
+**NPM version**: 3.10.10 (npm3)
+**DB adapter name**: sails-mysql for model storage and connect-redis for session storage
+**DB adapter version**: 0.11.5 (sails-mysql) and 3.3.2 (connect-redis)
+**Operating system**: CentOS 7 x86-64
+
+<!--
+### END VERSION INFO ###
+======================================================
+GREAT! - Now read carefully
+(Sailsbot will know if you don't)!
+======================================================
+
+Before you submit an issue for Sails, please make sure you have read the issue contribution guide (http://bit.ly/sails-issue-guide) carefully, and then verify the following by typing an X in between each set of [ ] brackets below (don't make any other changes to the text!):
+
+### BEGIN PLEDGE ###
+- [x ] I am experiencing a concrete technical issue (aka a bug) with Sails (ideas and feature proposals should follow the guide for proposing features and enhancements (http://bit.ly/sails-feature-guide), which involves making a pull request).  If you're not 100% certain whether it's a bug or not, that's okay--you may continue.  The worst that can happen is that the issue will be closed and we'll point you in the right direction.
+
+- [x ] I am not asking a question about how to use Sails or about whether or not Sails has a certain feature (please refer to the documentation(http://sailsjs.com), or post on http://stackoverflow.com, our Google Group (http://bit.ly/sails-google-group) or our live chat (https://gitter.im/balderdashy/sails).
+
+- [x ] I have already searched for related issues, and found none open (if you found a related _closed_ issue, please link to it in your post).
+
+- [x ] My issue title is concise, on-topic and polite (""jst.js being removed from layout.ejs on lift"" is good; ""templates dont work"" or ""why is sails dumb"" are not so good).
+
+- [x ] I have tried all the following (if relevant) and my issue remains:
+  - Make sure you have the right app lifted.
+  - Make sure you've killed the Sails server with CTRL+C and started it again.
+  - Make sure you closed any open browser tabs pointed at localhost before starting Sails.
+  - Make sure you do not have any other Sails apps running in other terminal windows.
+  - Make sure the app you are using to reproduce the issue has a clean node_modules/ directory, meaning:
+    * no dependencies are linked (e.g. you haven't run npm link foo)
+    * that you haven't made any inline changes to files in the node_modules/ folder
+    * that you don't have any weird global dependency loops. The easiest way to double-check any of the above, if you aren't sure, is to run: rm -rf node_modules && npm cache clear && npm install.
+
+and finally...
+- [x ] **I can provide steps to reproduce this issue that others can follow.**
+
+Ideally, this involves creating a new repo that demonstrates the problem (see instructions at http://bit.ly/sails-issue-repro).  Even though your issue may seem so simple to reproduce that a new repo is unnecessary, you'd be surprised how many solutions present themselves when you start from `sails new` and attempt to recreate your issue from scratch in a new app.  This ensures that the real issue isn't in your user code (a forgotten policy file, perhaps?) or in a third-party module.  If you're absolutely _convinced_ that a new repo is unnecessary, provide clear, concise and _specific_ steps to reproduce the problem in your post (not ""create a model then do blueprint create"").
+### END PLEDGE ###
+
+OKAY--THANKS FOR READING!  Continue posting details of your issue below. -->
+<hr/>
+
+# What happened to my app?
+
+Dear developers,
+
+I was configuring the session of my app and found the auto `rolling` feature for sessions seems to not work, that is, the `session.maxAge` of the corresponding request **will not** be auto reseted if `session` is not modified.
+
+I have read https://github.com/expressjs/session#cookie carefully but I still can not figure out what is wrong with my `config/local.js` and my app :( .
+
+For some political reason I cannot access to http://bit.ly/sails-issue-repro so I am not sure whether my issue reproducing repo meets your requirements :( .
+
+# My configurations
+
+Session storage adapter: `connect-redis`
+
+Redis version: `4.0.6`
+
+`config/local.js`:
+
+```
+module.exports = {
+  port: 80,
+  session: {
+    adapter: 'connect-redis',
+    host: '127.0.0.1',
+    ttl: 7 * 24 * 3600, // One week
+    db: 0,
+    prefix: 'sess:',
+    cookie: {
+      resave: false,
+      maxAge: 7 * 24 * 3600 * 1000, // One week
+      rolling: true,
+      saveUninitialized: false
+    },
+    routesDisabled: ['GET /js/*', 'GET /css/*', 'GET /images/*']
+  },
+  models: {
+    migrate: 'safe',
+    connection: 'localDiskDb'
+    // connection: 'mysql'
+  }
+}
+```
+
+# Issue reproducing repository
+
+[sails-issue-repro-session-rolling](https://github.com/Luluno01/sails-issue-repro-session-rolling)
+
+# Issue reproducing steps
+
+1. Run app.
+2. Visit http://localhost/test/wr?str=rua and check the expiration date of the session cookie on a browser. This request will modify `session` and therefore the `session` is initialized and will be saved.
+3. Wait for some time, say, 1 minute.
+4. Visit http://localhost/test/rd and check the expiration date of the session cookie on a browser again. This request **will not** modify `session`.
+
+You will find the expiration date of the session cookie will not be reset until you modify `session` by visiting http://localhost/test/wr?str=someDifferentString again.
+
+# Finally
+
+The following configurations cannot help, too.
+
+```
+// config/local.js
+module.exports = {
+  port: 80,
+  session: {
+    adapter: 'connect-redis',
+    host: '127.0.0.1',
+    ttl: 7 * 24 * 3600, // One week
+    db: 0,
+    prefix: 'sess:',
+    cookie: {
+      resave: true, // Hey, there
+      maxAge: 7 * 24 * 3600 * 1000, // One week
+      rolling: true,
+      saveUninitialized: false
+    },
+    routesDisabled: ['GET /js/*', 'GET /css/*', 'GET /images/*']
+  },
+  models: {
+    migrate: 'safe',
+    connection: 'localDiskDb'
+    // connection: 'mysql'
+  }
+}
+```
+
+or 
+
+```
+// config/local.js
+module.exports = {
+  port: 80,
+  session: {
+    adapter: 'connect-redis',
+    host: '127.0.0.1',
+    ttl: 7 * 24 * 3600, // One week
+    db: 0,
+    prefix: 'sess:',
+    cookie: {
+      resave: true, // Hey, there
+      maxAge: 7 * 24 * 3600 * 1000, // One week
+      rolling: true,
+      saveUninitialized: true // Hey, there
+    },
+    routesDisabled: ['GET /js/*', 'GET /css/*', 'GET /images/*']
+  },
+  models: {
+    migrate: 'safe',
+    connection: 'localDiskDb'
+    // connection: 'mysql'
+  }
+}
+```
+
+That's all. I suspect this is a bug, probably. I hope some would help me with this issue very soon XD.
+",False
+Get a deprecation warning when printing incoming client data,"Hi, dear developers,
+
+I wrote a unattended script to do some simple but time-consuming works for me. It works great but every time it prints the incoming data from client, it gets a `DeprecationWarning: Calling an asynchronous function without callback is deprecated.`. I don't know how to get rid of this warning so I come here for help.
+
+Here is my script:
+
+```
+const Client = require('ssh2').Client;
+const Log = require('Log.js');
+const path = require('path');
+const fs = require('fs');
+const cmd = require('node-cmd');
+const Interfer = require('Interfer.js');
+var log = new Log({
+  logFile: path.join(__dirname, 'default.log')
+});
+
+var config = {
+  proxy: {
+    host: someIP,
+    port: somePort,
+    username: someUsername,
+    password: somePassword
+  },
+  victim: {
+    host: someIP,
+    port: somePort,
+    username: someUsername,
+    password: somePassword
+  }
+}
+
+function testNFW(int, pcapName) {
+  let proxy = new Client();
+  let victim = new Client();
+  
+  // Process start
+  /*
+  1. Set proxy interference
+  2. Start packets capturing on victim
+  3. Start sending packets to victim on attacker
+  4. Wait for 50s
+  5. Start injecting watermark on proxy
+  6. Wait for 100s
+  7. Wait for 50s
+  8. Stop packets capturing on victim
+  9. Recover proxy interferece
+  */
+  
+  proxy.on('ready', function() {
+    var error = false;
+    console.log('Proxy :: ready');
+    victim.on('ready', function() {
+      console.log('Victim :: ready');
+      // 0. Connect to proxy and victim
+      proxy.shell((eproxy, sproxy) => {
+        if(eproxy) {
+          log.error('Proxy connection Error: ' + eproxy);
+          error = true;
+        };
+        sproxy.on('close', () => {
+          proxy.end();
+        }).on('data', (data) => {
+          log.data('[ Proxy ] ' + data);
+        });
+        log.info('Connected to proxy.');
+        victim.shell((evictim, svictim) => {
+          if(evictim) {
+            log.error('Victim connection Error: ' + evictim);
+            error = true;
+          };
+          svictim.on('close', () => {
+            victim.end();
+          }).on('data', (data) => {
+            log.data('[ Victim ] ' + data);
+          });
+          log.info('Connected to victim.');
+
+          // Ensure no tcpdump is running before the test
+          svictim.write('pkill tcpdump\n', () => {})
+  
+          let interfer = new Interfer();
+          // 1. Set proxy interference
+          interfer.push(int);
+          log.info('Set interference: ' + int);
+          sproxy.write(Interfer.toCommand(int), () => {});
+  
+          // 2. Start packets capturing on victim
+          log.info('Start packets capturing on victim');
+          svictim.write('cd /root/victim\n./cap.sh ' + pcapName + '\n', () => {});
+          
+          // 3. Start sending packets to victim on attacker
+          cmd.run('duel-flow.bat');
+          // 4. Wait for 50s
+          // 5. Start injecting watermark on proxy
+          let timeoutInject = setTimeout(() => {
+            log.info('Start injecting watermark on proxy.');
+            sproxy.write('cd /root/nfw\n./inject.sh\n', () => {});
+            log.info('Waiting for 150s');
+            // 6. Wait for 100s
+            // 7. Wait for 50s
+            // 8. Stop packets capturing on victim
+            let timeoutStopCap = setTimeout(() => {
+              svictim.end('pkill tcpdump\nexit\n', () => {});
+              sproxy.end(interfer.popCommand() + 'exit\n', () => {});
+              log.info('Done.');
+            }, 150 * 1000);
+          }, 50 * 1000);
+        });
+      });
+  
+    }).connect(config.victim);
+  }).connect(config.proxy);
+}
+
+var lossRate = [30, 20, 11, 7, 5];
+var lossRateIndex = 0;
+var groupCounter = 0;
+var MAX_GROUP_NUM = 10 - 1;
+var now = new Date();
+var interval;
+function testIterator() {
+  var testName = 'watermark_interfer_' + now.getFullYear() + '.' + (now.getMonth() + 1) + '.' + now.getDate() + '_loss_' + lossRate[lossRateIndex] + '_' + groupCounter;
+  log.setLogFile(path.join(__dirname, testName + '.log'));
+  log.resetTime();
+  log.info('Start test: ' + testName);
+  testNFW('loss ' + lossRate[lossRateIndex], testName + '.pcap');
+  groupCounter++;
+  if(groupCounter > MAX_GROUP_NUM) { // Next group
+    lossRateIndex++;
+    groupCounter = 0;
+  }
+  if(lossRateIndex >= lossRate.length) { // All tests are done.
+    clearInterval(interval);
+  }
+}
+
+process.on('uncaughtException', function (err) {
+  log.error('Uncaught error :' + err);
+  log.info('Ignore error and skip this test.');
+});
+
+testIterator(); // Run the first test and wait for 220s
+interval = setInterval(testIterator, 220 * 1000);
+```
+
+As for the empty callback function of stream.write(), I don't think the network would fail (in convention) so I leave it empty.
+
+I know my question may be kind of stupid. If it does, feel free to close this issue without a reply XD.",False
+Open/close panel breaks when open&close the panel frequently,"This is a (multiple allowed):
+* [x] bug
+* [ ] enhancement
+* [ ] feature-discussion (RFC)
+
+* Framework7 Version: 1.6.4.
+* Platform and Target: Both Chrome@Windows8.1 and Crosswalk@Android4.4.4.
+
+### What you did
+I wrote a toggleSideNav() js function:
+```
+function toggleSideNav() {
+  if($$(""body"").hasClass(""with-panel-left-cover"")) {
+    app.closePanel();
+    console.log(""Panel closed."");
+  } else {
+    app.openPanel(""left"");
+    console.log(""Panel opened."");
+  }
+}
+```
+
+**On Windows:**
+
+I opened the Developer Tools and call the toggleSideNav() function again and again as fast as possible.
+
+**On Android:**
+
+I bind the toggleSideNav() function to the Menu button and press the menu button again and again as fast as possible.
+
+### Expected Behavior
+The panel opens and close as normal.
+
+### Actual Behavior
+After several calls to that js function the app seemed to stuck, it just couldn't response to any user operations.
+I opened the Developer Tools, in Elements tab I found this problem was caused directly by not removing the ```panel-overlay``` element's attribute ```style=""display: block;""``` and not setting the ```app.ML.allowPanelOpen``` to ```true``` after a ```app.closePanel``` call (The panel was hidden but the user couldn't do anything with the ```panel-overlay``` that block the screen ops). But I have no idea about how to fix this.
+
+### Why I test this
+I know this issue would be kinda stupid since almost no one will open and close the panel that frequently. But still, I believe there must be someone like me who loves playing with the panel in my book. XDDDD
+",False
+Dynamic Grid breaks when grid is in a switcher,"<!--
+
+Got a question?
+===============
+The issue list of this repo is exclusively for bug reports and feature requests. For simple questions, please use the following resources:
+
+- Read the docs: https://getuikit.com/docs
+- Ask in the Gitter chat room: https://gitter.im/uikit/uikit
+- Look for/ask questions on stack overflow: https://stackoverflow.com/questions/ask?tags=getuikit
+
+-->
+
+<!-- BUG REPORT TEMPLATE -->
+### UIkit version
+<!-- Check if the issue is reproducible with the latest stable version. -->
+2.25.0
+
+### Reproduction Link
+<!-- A minimal Codepen that can reproduce the bug. -->
+<!-- You could start with this template: http://codepen.io/anon/pen/XMpryM -->
+http://www.0xffffffff.ml/bug_reproduce.html
+
+### Steps to reproduce
+Just press any <button>.
+
+### What is Expected?
+Shown below""Expected:"" in the reproduction page.
+![image](https://cloud.githubusercontent.com/assets/13421613/23823202/951edbca-0698-11e7-836a-2b4b0b9178b7.png)
+
+### What is actually happening?
+Shown below""What is actually happening:"" after you pressed a button in the reproduction page.
+![image](https://cloud.githubusercontent.com/assets/13421613/23823200/7f75eb10-0698-11e7-842f-96adf2b665c0.png)
+",False
+Wrong Required Param Check in JavaScript Client,"### Describe the bug
+
+The `map_data_to_params` checks all parameters on all endpoints and causes a failure if a required parameter from another endpoint is not given.
+
+I am working on a PR to fix it.
+
+### Have you searched existing issues?  🔎
+
+- [X] I have searched and found no existing issues
+
+### Reproduction
+
+Taking my space as an example: https://huggingface.co/spaces/JacobLinCool/vocal-separation
+
+The suggested code for the `/youtube` endpoint:
+```js
+import { Client } from ""@gradio/client"";
+
+const client = await Client.connect(""JacobLinCool/vocal-separation"");
+const result = await client.predict(""/youtube"", { 		
+		url: ""Hello!!"", 
+});
+
+console.log(result.data);
+```
+
+Parameter check failed:
+
+```
+Submit function encountered an error: Error: No value provided for required parameter: param_0
+    at <anonymous> (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:476:13)
+    at Array.forEach (<anonymous>)
+    at map_data_to_params (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:470:14)
+    at Client.submit (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:1583:25)
+    at <anonymous> (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:940:22)
+    at new Promise (<anonymous>)
+    at Client.predict (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:939:10)
+    at <anonymous> (/Users/jacoblincool/Documents/GitHub/gradio-bot/packages/gradio-bot/test.ts:4:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+node:internal/process/promises:288
+            triggerUncaughtException(err, true /* fromPromise */);
+            ^
+
+Error: No value provided for required parameter: param_0
+    at <anonymous> (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:476:13)
+    at Array.forEach (<anonymous>)
+    at map_data_to_params (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:470:14)
+    at Client.submit (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:1583:25)
+    at <anonymous> (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:940:22)
+    at new Promise (<anonymous>)
+    at Client.predict (/Users/jacoblincool/Documents/GitHub/gradio-bot/node_modules/.pnpm/@gradio+client@1.3.0/node_modules/@gradio/client/dist/index.js:939:10)
+    at <anonymous> (/Users/jacoblincool/Documents/GitHub/gradio-bot/packages/gradio-bot/test.ts:4:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Node.js v18.8.0
+```
+
+Where ""param_0"" is a required parameter for the other endpoint (`/separate`).
+
+### Screenshot
+
+_No response_
+
+### Logs
+
+_No response_
+
+### System Info
+
+```shell
+Node.js 18.8.0
+`@gradio/client` 1.3.0
+```
+
+
+### Severity
+
+I can work around it",False
+Gradio Demo App on HuggingFace Spaces with ZeroGPU Support,"Hello,
+
+I've created a Gradio demo app for the MP-SENet model, hosted on HuggingFace Spaces with ZeroGPU support. It allows users to try out the model immediately in their browsers without requiring any local setup.
+
+Additionally, a simple segment feature that splits long audio files into segments has been implemented for the app. For ZeroGPU (which uses an A100 with 40G memory under the hood), the maximum segment length is 10 seconds. When running locally, the segment length is limited to 3 seconds to prevent blowing up the memory on my MBP.
+
+The demo app is here: https://huggingface.co/spaces/JacobLinCool/MP-SENet
+And the repository is here: https://github.com/JacobLinCool/MP-SENet-Gradio
+
+Any feedback is welcome!",False
+server error 500: cmpr is not a function,"Received server error 500 on authentication callback. The backend log shows a ""cmpr is not a function"".
+
+![image](https://github.com/CSIE-Camp/camp-app/assets/28478594/5e0a2860-6ebf-4f89-b3a4-80a5510e4f56)
+
+![image](https://github.com/CSIE-Camp/camp-app/assets/28478594/1c154c61-558e-4591-be83-ae18c5f2a738)
+",False
+Add Email Worker Timeout to Limits,"### Which Cloudflare product(s) does this pertain to?
+
+Email Routing, Workers
+
+### Subject Matter
+
+Email Worker Timeout
+
+### Content Location
+
+https://developers.cloudflare.com/email-routing/limits/
+
+### Additional information
+
+It seems that the email worker has a wall-clock timeout (about 30 seconds) that was not documented before.
+
+I can verify the behavior by using the following sample code:
+
+```ts
+export default {
+	email: async (msg) => {
+		const T = 60;
+		for (let i = 0; i < T; i++) {
+			console.log(`${i} seconds have passed`);
+			await new Promise((resolve) => setTimeout(resolve, 1000));
+		}
+		console.log(""done"");
+		msg.setReject(""Solved"");
+	},
+} satisfies ExportedHandler;
+```
+
+The request is being ""Canceled"" as the log says:
+```
+Email from:[email] to:[email] size:5602 @ 11/9/2023, 4:27:16 PM - Canceled
+  (log) 0 seconds have passed
+  (log) 1 seconds have passed
+  (log) 2 seconds have passed
+  (log) 3 seconds have passed
+  (log) 4 seconds have passed
+  (log) 5 seconds have passed
+  (log) 6 seconds have passed
+  (log) 7 seconds have passed
+  (log) 8 seconds have passed
+  (log) 9 seconds have passed
+  (log) 10 seconds have passed
+  (log) 11 seconds have passed
+  (log) 12 seconds have passed
+  (log) 13 seconds have passed
+  (log) 14 seconds have passed
+  (log) 15 seconds have passed
+  (log) 16 seconds have passed
+  (log) 17 seconds have passed
+  (log) 18 seconds have passed
+  (log) 19 seconds have passed
+  (log) 20 seconds have passed
+  (log) 21 seconds have passed
+  (log) 22 seconds have passed
+  (log) 23 seconds have passed
+  (log) 24 seconds have passed
+  (log) 25 seconds have passed
+  (log) 26 seconds have passed
+  (log) 27 seconds have passed
+  (log) 28 seconds have passed
+  (log) 29 seconds have passed
+  (log) 30 seconds have passed
+  (log) 31 seconds have passed
+  (log) 32 seconds have passed
+  (log) 33 seconds have passed
+```",True
+Tool Usage,"Currently this tool has two way to use, the CLI (the bundled binary) and the Web UI. The CLI and the Web UI both support the same arguments.
+
+The Web UI is developed with Gradio, and the demo is available at: https://huggingface.co/spaces/bcg-unet/demo
+
+However, the two methods of distribution (the bundled binary and the Web UI hosted on Hugging Face) encounter different issues:
+
+The bundled binary suffers from a slow startup time due to IO bottlenecks, and GPU acceleration cannot be enabled due to the complexity of platform-dependent dependencies.
+
+The Web UI faces resource limitations, such as restrictions on file size and computational resources. Additionally, long-running connections may be interrupted by network issues, leading to task cancellations.
+
+Screenshot of the Web UI demo on Huggingface:
+<img width=""1000"" src=""https://github.com/fahsuanlin/labmanual/assets/28478594/5d8c60bc-6c2a-4c88-999f-2f2903fea798"">
+",False
+Use `sveltekit-superform` to improve data mutating process,"I am considering using `sveltekit-superform` (it use `zod` to perform validation under the hood, which can be run on both-side) to improve the data mutating process.
+
+[Sveltekit Superform (MIT licensed)](https://github.com/ciscoheat/sveltekit-superforms)
+",True
+Email Service Failed Silently,"Some users cannot receive the verification email.
+
+@DWyatb I think this happened to you before, can you provide some additional context about your situation?
+",False
+Popup menu is not working on mobile phone,https://github.com/UniCourse-TW/realm/assets/28478594/01ed220f-0be7-4902-9701-fd2482dedb56,False
+Don't panic when R2 configurations are not set at build time,"              > Additionally, this could potentially resolve the issues with the failing release CI.
+
+I think this might be a bug? IMO those config should be loaded in runtime rather then build-time.
+We should consider change the behavior in the future. But I am OK to fix it this way now.
+
+_Originally posted by @Bogay in https://github.com/UniCourse-TW/realm/issues/55#issuecomment-1554389556_
+
+See https://github.com/UniCourse-TW/realm/actions/runs/5024167441/jobs/9009595456#step:8:263",True
+Update Environment Variable Naming Convention for R2/S3,"Given that R2 is simply a drop-in alternative for S3 (with S3 libraries being used internally), it appears that the `CLOUDFLARE_` prefix in `CLOUDFLARE_R2_ENDPOINT`, `CLOUDFLARE_ACCESS_KEY_ID`, and `CLOUDFLARE_SECRET_ACCESS_KEY` should be removed.
+
+I propose using `S3_ENDPOINT`, `S3_ACCESS_KEY_ID`, and `S3_SECRET_ACCESS_KEY` as the environment variables instead.
+",True
+Set default address to 0.0.0.0,"Since Compilet should mostly be run in a container, to manually pass `ROCKET_ADDRESS=0.0.0.0` is quite meaningless.",True
+Point out S3 compatible bucket requirement in README,"> I think all of the developers (and anyone who wants to run an UniCourse instance) should have a S3 compatible bucket right? Maybe we need to point it out in the document.
+
+_Originally posted by @JacobLinCool in https://github.com/UniCourse-TW/realm/pull/46#pullrequestreview-1425443804_
+            ",True
+Memorize the language used in the previous submission,"Can we add a feature to remember the language used in the previous submission? It would save time and effort.
+
+One possible solution could be to use client-side local storage to store the language selected in the previous submission. This would allow the browser to remember the user's preferred language and automatically preselect it in the language dropdown menu for future submissions.
+
+Thanks!",True
+Change Tab Size for Code Preview,"Dear NOJ Maintainers,
+
+I noticed that the current tab size for the code preview is set to `inherit`, which inherits a `1.5em` value. However, I find that this causes lines with tabs to be misaligned and difficult to read.
+
+To improve the readability, I propose changing the tab size for the code preview to 4 spaces. This will make it easier to read.
+
+I would like to submit a pull request to implement the change when I am available.
+
+Please let me know if there are any concerns or questions regarding this proposed change.
+
+Thank you for your time.
+
+<img width=""329"" alt=""misaligned"" src=""https://user-images.githubusercontent.com/28478594/230389657-8ddc8dcd-d363-4c26-a294-9eff53ebcce0.png"">
+",True
+Adding a link to course-pack README,"              How about adding a link to course-pack README so that others are easier to know how to get started?
+
+https://www.npmjs.com/package/course-pack
+
+_Originally posted by @Bogay in https://github.com/UniCourse-TW/realm/pull/19#discussion_r1142314420_
+            ",True
+Make Invitation Optional,"> In my opinion, we can retain the invitation as an optional field during the registration process. This approach can aid in pre-assigning roles and permissions, which can be advantageous.
+
+_Originally posted by @JacobLinCool in https://github.com/UniCourse-TW/realm/pull/19#discussion_r1141940012_
+",True
+Move Packages from Backend,All of our packages are maintained in the backend repository. We may need to move them to here.,True
+Use `Link` instead of `a`?,https://github.com/CSIE-Camp/website-frontend/blob/c54f039923e696b9a4318a064b870df8d34969aa/my-app/src/Nav.js#L10,True
+Include Pre-filled Roles in Invitation,Include roles in invitations can simplify the registration process for special cases (e.g. the first user or course packer),True
+Support Setup Guide in GUI,"Maybe we can show a setup screen when system detects there is only one ""admin"" user.
+
+The setup guide will ask for the username of the first user and automate the process of user registration with selected roles.",True
+Do Some Tree-Shaking on the Glitch Font,"I just noticed that the glitch font files are large, we may need to reduce the size of them.
+
+Some performence benchmark may be needed before making the change.",True
+2 / 15 Trackpad,"- [x] #19
+- [ ] #20
+- [x] #21
+",False
+Failed to Import Data,"I just tested through the CLI and failed:
+
+```sh
+❯ unicourse import --scope <XXX> <FILE>
+400 
+Invalid `prisma.entity.findUnique()` invocation:
+
+{
+  where: {
+    id: 'cldonn7uz000xnz18o7axwqaj'
+  },
+  include: {
+  ~~~~~~~
+    courses: {
+      select: {},
+      include: {
+        programs: {
+          select: {
+            id: true,
+            name: true
+          }
+        },
+        teachers: {
+          select: {
+            id: true,
+            name: true
+          }
+        }
+      }
+    },
+    children: {
+      include: {
+        courses: {
+          select: {},
+          include: {
+            programs: {
+              select: {
+                id: true,
+                name: true
+              }
+            },
+            teachers: {
+              select: {
+                id: true,
+                name: true
+              }
+            }
+          }
+        },
+        children: {
+          ...
+        }
+      }
+    }
+  }
+}
+
+
+Please either use `include` or `select`, but not both at the same time.
+```
+",False
+Use GitHub Actions to generate and deploy API documentation,"To make it easier for developers to understand and use our API, I suggest using GitHub Actions to automatically generate and deploy API documentation. This will ensure that the documentation is always up-to-date and accessible to those who need it.
+
+I would be happy to assist with setting up and configuring the GitHub Actions. I believe that this feature will greatly improve the developer experience and I hope it will be added soon!
+",True
+Add Git Hooks,"In order to improve the code quality and keep a consistent coding style, I suggest adding Husky to the project. Husky is a tool that allows for the creation of Git hooks. These hooks can be used to run scripts before or after certain Git events, such as committing or pushing. This can be used to automatically check code quality and format code before it is committed.
+
+Benefits:
+
+- Automatically checks code quality and formatting before committing
+- Improves code consistency
+- Minimizes errors and inconsistencies in the codebase
+
+Please let me know if you have any concerns about implementing this change.
+I would be happy to help with the implementation of this feature and I hope it will be added soon!",True
+Add a Linter or Formatter,"In order to maintain consistent code style and structure, I suggest adding a linter or formatter to the project. A linter checks code for potential errors and inconsistencies, while a formatter automatically formats code to comply with a specific style guide. This will improve the overall readability and maintainability of the codebase.
+
+Possible linters or formatters:
+
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/)
+
+Please let me know if you have any preference for a specific linter or formatter, or if you have any concerns about implementing this change.
+
+I would be happy to help with the implementation of this feature and I hope it will be added soon!
+
+cc @CSIE-Camp/backend-dev ",True
+Containerize the Application,"It has been brought to my attention that the current process for setting up the environment involves a significant number of manual steps. 
+
+In order to streamline and simplify this process, I would like to propose the use of Docker. This will allow for a more efficient and friendly setup process.
+",True
+Rewrite README,"I am going to re-write the README and add some setup instructions for new contributors.
+
+cc @CSIE-Camp/backend-dev
+",True
+Why We Need `conf_password` in Registration,"The only purpose of ""confirm password"" field is to ensure that the user has entered the correct password by having them enter it twice. This helps **prevent typos and errors** when creating an account.
+
+I think it can be implement in the frontend to provide a faster and more seamless user experience by notifying the user of errors immediately.
+
+In my opinion, check if they are matched in the backend seems useless?
+
+@Maxxxxxx-x What do you think?",True
+The API Document is Confusing,"I think the request body of `login` and `register` is wrong.
+
+https://github.com/CSIE-Camp/web_backend_stuff/blob/a6d32a213f13359c92fffdb4ad98295dfd792285/spec.yaml#L10-L43
+
+cc @Maxxxxxx-x @MakerTakala ",True
+process is not defined,![](https://cdn.discordapp.com/attachments/935899465733275688/1065975658125197412/image.png),False
+Re-import All Courses,"We should re-import all courses with new merge strategy.
+",True
+Production Docker Image,"Pre-built docker image makes deployment more portable.
+",True
+Wrong Type for Date,"`Date` have a serializing problem in the RPC process.
+
+A possible solution is to cast all `Date` into numbers and prohibit using non-primitive types in the gateway interface.
+",False
+Server-Side Response Type Check,"By applying server-side response type checks, it helps developers to reduce man-made errors.
+
+_Originally posted by @JacobLinCool in https://github.com/UniCourse-TW/Backend/issues/43#issuecomment-1328665906_
+      ",True
+Add User ID to Token Payload,I am tired of re-resolving user id on the server side.,True
+Hoist schema validation error handler to top-level middleware,"I noticed that there are many codes like this in our router:
+
+```ts
+    } catch (err) {
+        if (err instanceof z.ZodError) {
+            ctx.err(err.message, { code: 400 });
+        } else {
+            throw err;
+        }
+    }
+```
+
+I think we can move it to a top-level middleware to reduce the repetitiveness.",True
+Graph Discovery Visualization,"I want a button that can switch to ""Graph Discovery"" mode on the course search page.
+
+<img width=""782"" alt=""graph"" src=""https://user-images.githubusercontent.com/28478594/201398623-5fe40392-dca3-4f43-9e66-34d165dd91d5.png"">
+
+I want a _boundless_ and _draggable_ canvas, just like Whimsical.
+
+When I click an `entity` / `course` / `teacher`, the canvas then focuses on the element and shows extra relationships (extend the currently displayed graph, use lower opacity to represent some ""far"" elements.)
+
+This seems to be blocked by https://github.com/UniCourse-TW/Backend/issues/19, but I am interested in this cool and exciting feature.
+
+If anyone wants to work on this feature or has some idea about it, don't hesitate to discuss it here.",True
+[CI] Auto Deploy to Private Cloud Infra,"Thanks to [CNTUG](https://cloudnative.tw/) for providing the cloud infra for this project.
+
+It's time to make our workflow more efficient and help us to focus on the core development of UniCourse.
+
+## What to do
+
+The following may be done by GitHub Actions:
+
+**_On PR Open / Update_**
+
+* Build the docker image with the PR id as the tag and push it to GHCR.
+* SSH to our private cloud infra, pull the tagged image, and run the backend server.
+* Say something in the PR to notify about the deployment.
+
+**_On PR Close_**
+
+* SSH to our private cloud infra, stop the backend server and remove the image.
+
+**_On main branch Push_**
+
+* Build the docker image with the `latest` tag and push it to GHCR.
+* SSH to our private cloud infra, pull the `latest` image, and run the backend server.
+
+## Notes
+
+To avoid the port conflict, we need to use a different port for each deployment. The port number can be automatically configured in the `.env` file in each deployment.
+
+If we transfer our domain to Cloudflare, we can use [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps) as a reverse proxy to expose the backend server to the internet with different subdomains for each deployment, e.g. `pr-1234.unicourse.tw`.
+",True
+Tree Interaction Endpoint,I think we need an endpoint to interact with our forest. I'll call it `arborist`.,True
+Add server version (commit hash) to the status endpoint,I want to know which version of the server is running.,True
+Add Tests,"We don't have any tests, anyone who wants to contribute will be appreciated.
+",True
+API Rate Limiter,"I would like to implement a rate limiter based on the time usage of actions.
+
+In a time interval (maybe 15 minutes):
+- Every user has `500` ms credits.
+- If a user has a `verified` trait, then it gets `2000` ms extra credits.
+- If a user has other traits, it may get extra credits.
+
+In the above scenario, we can serve around 300 users at once:
+
+$(15 \times 60) \div (0.5 + 2) = 360 \Rightarrow 300$ (We need some resources to do checks and other chores)
+
+Since we do not have extra machines to do scaling and we haven't thought about it, a rate limiter would be necessary.
+
+> I do believe that we can scale, but more research must be done.
+
+Feel free to discuss the topic, thanks.",True
+Move to Graph Database,"In the far future, we may need to move to some kind of graph database since our data have some graphs.",True
+Transfer domain to CloudFlare,CF is better!,True
+Migrate from Express to Koa,"According to the [meeting note](https://hackmd.io/tHk4GS9mQruy3i5rce_ycQ), we need to do the migration before other tasks.",True
+How to Support Time-range Search,"Encode timestamp into a number?
+",True
+Crashing (SEGV) when using `JSON.stringify`,"### Version
+
+0.1.5
+
+### Platform
+
+Darwin JacobMacBook-Pro.local 21.4.0 Darwin Kernel Version 21.4.0: Fri Mar 18 00:46:32 PDT 2022; root:xnu-8020.101.4~15/RELEASE_ARM64_T6000 arm64
+
+### What steps will reproduce the bug?
+
+Minimal Reproduction: https://github.com/JacobLinCool/bun-json-stringify-segv-repro
+
+---
+
+## Run
+
+```sh
+bun crashing.js
+```
+
+## Source
+
+### Crashing Source
+
+[`crashing.js`](crashing.js)
+
+```js
+console.log(JSON.stringify(process, null, 4));
+```
+
+`console.log(JSON.stringify(process));` also crashed.
+
+### Working Source
+
+[`working.js`](working.js)
+
+```js
+console.log(process);
+```
+
+## Result
+
+The crash report:
+
+```sh
+❯ bun crashing.js
+Detected offset inconsistency: inlineOverflowAccordingToTotalSize doesn't match numberOfOutOfLineSlotsForMaxOffset!
+this = 0x300011f10
+transitionOffset = -1
+maxOffset = 64
+m_inlineCapacity = 65
+propertyTable = 0x117425f80
+numberOfSlotsForMaxOffset = 65
+totalSize = 65
+inlineOverflowAccordingToTotalSize = 0
+numberOfOutOfLineSlotsForMaxOffset = 1
+
+Crash at 4377300596
+
+
+–––– bun meta ––––
+Bun v0.1.5 macOS Silicon 21.4.0
+AutoCommand: 
+Elapsed: 65ms | User: 4ms | Sys: 15ms
+RSS: 17.12MB | Peak: 17.12MB | Commit: 67.11MB | Faults: 578
+–––– bun meta ––––
+
+Ask for #help in https://bun.sh/discord or go to https://bun.sh/issues
+```
+
+
+### How often does it reproduce? Is there a required condition?
+
+Always segmentation fault on:
+- my MBP (ARM macOS): Result shown above.
+- GitHub Hosted Runner (x64 linux): https://github.com/JacobLinCool/bun-json-stringify-segv-repro/runs/7497516253?check_suite_focus=true#step:5:1
+
+### What is the expected behavior?
+
+It should print a prettified JSON string.
+
+### What do you see instead?
+
+SEGV.
+
+**ARM macOS**
+
+```sh
+❯ bun crashing.js
+Detected offset inconsistency: inlineOverflowAccordingToTotalSize doesn't match numberOfOutOfLineSlotsForMaxOffset!
+this = 0x300011f10
+transitionOffset = -1
+maxOffset = 64
+m_inlineCapacity = 65
+propertyTable = 0x117425f80
+numberOfSlotsForMaxOffset = 65
+totalSize = 65
+inlineOverflowAccordingToTotalSize = 0
+numberOfOutOfLineSlotsForMaxOffset = 1
+
+Crash at 4377300596
+
+
+–––– bun meta ––––
+Bun v0.1.5 macOS Silicon 21.4.0
+AutoCommand: 
+Elapsed: 65ms | User: 4ms | Sys: 15ms
+RSS: 17.12MB | Peak: 17.12MB | Commit: 67.11MB | Faults: 578
+–––– bun meta ––––
+
+Ask for #help in https://bun.sh/discord or go to https://bun.sh/issues
+```
+
+**x64 linux**
+
+```sh
+Run bun crashing.js
+Detected offset inconsistency: inlineOverflowAccordingToTotalSize doesn't match numberOfOutOfLineSlotsForMaxOffset!
+this = 0x7fa7000121b0
+transitionOffset = -1
+maxOffset = 64
+m_inlineCapacity = 99
+propertyTable = 0x7fa827426040
+numberOfSlotsForMaxOffset = 6[5](https://github.com/JacobLinCool/bun-json-stringify-segv-repro/runs/7497516253?check_suite_focus=true#step:5:6)
+totalSize = [6](https://github.com/JacobLinCool/bun-json-stringify-segv-repro/runs/7497516253?check_suite_focus=true#step:5:7)5
+inlineOverflowAccordingToTotalSize = 0
+numberOfOutOfLineSlotsForMaxOffset = 1
+Crash at 4299262265180
+–––– bun meta ––––
+Bun v0.1.5 Linux x64 #1[7](https://github.com/JacobLinCool/bun-json-stringify-segv-repro/runs/7497516253?check_suite_focus=true#step:5:8)~20.04.1-Ubuntu SMP Thu Jun 23 20:01:51 UTC 2022
+AutoCommand: 
+Elapsed: [10](https://github.com/JacobLinCool/bun-json-stringify-segv-repro/runs/7497516253?check_suite_focus=true#step:5:11)ms | User: 3ms | Sys: 7ms
+RSS: 67.[11](https://github.com/JacobLinCool/bun-json-stringify-segv-repro/runs/7497516253?check_suite_focus=true#step:5:12)MB | Peak: 44.[15](https://github.com/JacobLinCool/bun-json-stringify-segv-repro/runs/7497516253?check_suite_focus=true#step:5:16)MB | Commit: 67.11MB | Faults: 0
+–––– bun meta ––––
+Ask for #help in https://bun.sh/discord or go to https://bun.sh/issues
+```
+
+### Additional information
+
+Minimal Reproduction: https://github.com/JacobLinCool/bun-json-stringify-segv-repro",False
+Confusing Returnings of Server Side Rendering API,"### Description
+
+Expected SSR generates a rendered (styles included) HTML content. 
+But it seems that it only parses the html and outputs the generated CSS.
+
+confusing returnings:
+
+1. `html` in the output is the same as the input one and useless.
+2. `stylesCss` should contain color variables used in HTML.
+3. `colorsCss` is always about 20 kb in size without any tree-shaking, no matter what the input is.
+4. `colorsMetaContent` is useless, I don't know in which case it will be used.
+
+That is, developers need to inject the uncompleted (without color variables) or unused (too many color variables) CSS into HTML manually, which is not good for DX and performance.
+
+BTW, the SSR example on the document is outdated.
+
+### Reproduction
+
+[Run the test on StackBlitz](https://stackblitz.com/edit/node-mab5nz?embed=1&file=test.ts&hideNavigation=1&view=editor)
+
+```ts
+import { render } from ""@master/css/render"";
+import { StyleSheet, Style } from ""@master/css"";
+
+const target: string[] = [
+    `<div class=""p:12""></div>`,
+    `<div class=""font:24 font:56@2xl font:48@lg font:32@md bg:blue-54:hover bg:blue-47 bg:blue-68:active color:orange""></div>`,
+];
+
+for (const html of target) {
+    test(html);
+}
+
+function test(html: string) {
+    const key = `render \x1b[93m${html}\x1b[m`;
+
+    console.time(key);
+    const result = render(html, { StyleSheet, Style });
+    console.timeEnd(key);
+
+    console.log(""html:"", `\x1b[92m${result.html}\x1b[m`);
+    console.log(""stylesCss:"", `\x1b[96m${result.stylesCss}\x1b[m`);
+    console.log(""colorsMetaContent:"", `\x1b[94m${result.colorsMetaContent}\x1b[m`);
+    console.log(""length of colorsCss:"", `\x1b[95m${result.colorsCss.length}\x1b[m`);
+}
+```
+
+### System Informations
+
+`@master/css`: `1.17.2`
+",True
+📄 PNPM should also install `@master/style` manually.,"When I am using `pnpm` to install `@master/styles`, the warning shows up.
+
+```
+ WARN  Issues with peer dependencies found
+.
+├─┬ @master/styles
+│ └── ✕ missing peer @master/style@^1.0.0
+```
+
+After digging into the source code, I found that in `package.json`, the package states `@master/style` as its peer dependency:
+
+```json
+""peerDependencies"": {
+    ""@master/style"": ""^1.0.0""
+},
+```
+
+~~I don't know if it is necessary to do so? Is `@master/style` bundled in `@master/styles`?~~
+
+I think the document of `pnpm` setup instruction should be:
+
+```sh
+pnpm install @master/styles @master/style @master/normal.css
+```
+
+because `pnpm` won't automatically install peer dependencies by default.
+
+> Node: `16.13.1`
+> PNPM: `6.32.3`
+> @master/styles: `1.3.1`",True
